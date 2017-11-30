@@ -1,250 +1,234 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-  <link rel="stylesheet" href="CADASTRO.css" type="text/css">
-  <title> pagina de cadastro </title>
-  <meta name="description" content="Aprenda a criar um site completo que usa formulários em HTML">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> </head>
-
-<body background="../imagens/a (1).png" bgproperties="fixed">
-  <nav class="navbar navbar-expand-md navbar-dark bg-secondary" style="background-image: url(&quot;imagens/a (7).png&quot;);">
-    <div class="container">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-      <a class="navbar-brand" href="/"><b class="text-uppercase gradient-overlay">NEW-ELITE<br></b></a>
-      <div class="collapse navbar-collapse mx-auto" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item text-center">
-            <a class="nav-link text-white" href="#">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a>
-          </li>
-          <li class="nav-item" id="p-5 gradient-overlay bg-dark">
-            <a class="nav-link" href="/planos"><b class="text-light">PLANOS</b></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/quem-somos"><b class="text-light">QUEM SOMOS</b></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/login"><b class="text-light my-2">LOGIN | CADASTRE-SE<br></b></a>
-          </li>
-        </ul>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+      <link rel="stylesheet" href="CADASTRO.css" type="text/css">
+      <title> Cadastro </title>
+      <meta name="description" content="Aprenda a criar um site completo que usa formulários em HTML">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark" style="background-image: url(&quot;../imagens/a (7).png&quot;);">
+         <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+            <a class="navbar-brand" href="/"><b class="text-uppercase gradient-overlay">NEW-ELITE<br></b></a>
+            <div class="collapse navbar-collapse mx-auto" id="navbarSupportedContent">
+               <ul class="navbar-nav mr-auto">
+                  <li class="nav-item text-center">
+                     <a class="nav-link text-white" href="#">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a>
+                  </li>
+                  <li class="nav-item" id="p-5 gradient-overlay bg-dark">
+                     <a class="nav-link" href="/planos"><b class="text-light">PLANOS</b></a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="/quem-somos"><b class="text-light">QUEM SOMOS</b></a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="/login"><b class="text-light my-2">LOGIN | CADASTRE-SE<br></b></a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <div class="py-5 opaque-overlay bg-dark text-dark" style="background-image: url(&quot;../imagens/a (1).png&quot;);">
+      <form class="" method="post" action="" >
+         <div class="container py-5">
+            <div class="row">
+               <div class="col-md-4">
+                  <div class="col-md-12">
+                     <h1 class="text-gray-dark">Dados de login </h1>
+                     <div> <label>E-mail: </label>
+                        <input type="email" name="email" class="form-control" placeholder="E-mail" required="" autofocus=""> 
+                     </div>
+                     <div> <label>Usuário</label>
+                        <input type="usuario" name="usuario" class="form-control" placeholder="Usuário" required="" autofocus=""> 
+                     </div>
+                     <div> <label>Senha</label>
+                        <input type="password" name="password" class="form-control" placeholder="Senha" required=""> 
+                     </div>
+                     <div> <label>Confirmar Senha</label>
+                        <input type="password" name="passwordConfirm" class="form-control" placeholder="Confirmar senha" required=""> 
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-8">
+                  <div class="col-md-13">
+                     <h1 class="text-gray-dark">Dados Pessoais</h1>
+                     <table style="margin-bottom: 12%;">
+                        <tr>
+                           <td colspan="3">
+                              <div> <label>Nome: </label>
+                                 <input type="text" name="nome" class="form-control" placeholder="Nome" required="" autofocus=""> 
+                              </div>
+                           </td>
+                           <td style="display: table; float:left; margin-right:10px"/>
+                           <td>
+                              <div > <label>Sobrenome: </label>
+                                 <input type="text" name="sobrenome" class="form-control" placeholder="Sobrenome" required="" autofocus=""> 
+                              </div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td  style="display: table; float:left; margin-right:10px">
+                              <div > <label>RG: </label>
+                                 <input type="text" name="rg" class="form-control" placeholder="RG" required="" autofocus=""> 
+                              </div>
+                           </td>
+                           <td style="display: table; float:left; margin-right:10px" >
+                              <div > <label>CPF: </label>
+                                 <input type="text" name="cpf" class="form-control" placeholder="CPF" required="" autofocus=""> 
+                              </div>
+                           </td>
+                           <td colspan="4">
+                              <div > <label>Nascimento: </label>
+                                 <input type="Date" name="nascimento" class="form-control" placeholder="Nascimento" required="" autofocus=""> 
+                              </div>
+                           </td>
+                        </tr>
+                     </table>
+                     <h1 class="text-gray-dark">Dados de Endereço</h1>
+                     <table>
+                        <tr>
+                           <td colspan="3" >
+                              <div> <label>Rua: </label>
+                                 <input type="text" name="rua" class="form-control" placeholder="Rua" required="" autofocus=""> 
+                              </div>
+                           </td>
+                           <td style="display: table; float:left; margin-right:10px"/>
+                           <td>
+                              <div > <label>Numero: </label>
+                                 <input type="Number" name="numero" class="form-control" placeholder="Numero" required="" autofocus=""> 
+                              </div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td style="display: table; float:left; margin-right:10px">
+                              <div> <label>Cep: </label>
+                                 <input type="text" name="cep" class="form-control" placeholder="Cep" required="" autofocus=""> 
+                              </div>
+                           </td>
+                           <td colspan="4">
+                              <div> <label>Bairro: </label>
+                                 <input type="text" name="bairro" class="form-control" placeholder="Bairro" required="" autofocus=""> 
+                              </div>
+                           </td>
+                        <tr>
+                           <td style="display: table; float:left; margin-right:10px">
+                              <div > <label>Cidade: </label>
+                                 <input type="text" name="cidade" class="form-control" placeholder="Cidade" required="" autofocus=""> 
+                              </div>
+                           </td>
+                           <td>
+                              <div >
+                                 <label>Estado: </label>
+                                 <select name="estado" class="form-control">
+                                    <option value="select">Selecione</option>
+                                    <option value="ac">Acre</option>
+                                    <option value="al">Alagoas</option>
+                                    <option value="am">Amazonas</option>
+                                    <option value="ap">Amapá</option>
+                                    <option value="ba">Bahia</option>
+                                    <option value="ce">Ceará</option>
+                                    <option value="df">Distrito Federal</option>
+                                    <option value="es">Espírito Santo</option>
+                                    <option value="go">Goiás</option>
+                                    <option value="ma">Maranhão</option>
+                                    <option value="mt">Mato Grosso</option>
+                                    <option value="ms">Mato Grosso do Sul</option>
+                                    <option value="mg">Minas Gerais</option>
+                                    <option value="pa">Pará</option>
+                                    <option value="pb">Paraíba</option>
+                                    <option value="pr">Paraná</option>
+                                    <option value="pe">Pernambuco</option>
+                                    <option value="pi">Piauí</option>
+                                    <option value="rj">Rio de Janeiro</option>
+                                    <option value="rn">Rio Grande do Norte</option>
+                                    <option value="ro">Rondônia</option>
+                                    <option value="rs">Rio Grande do Sul</option>
+                                    <option value="rr">Roraima</option>
+                                    <option value="sc">Santa Catarina</option>
+                                    <option value="se">Sergipe</option>
+                                    <option value="sp">São Paulo</option>
+                                    <option value="to">Tocantins</option>
+                                 </select>
+                              </div>
+                           </td>
+                        </tr>
+                     </table>
+                     </br>
+                     <div class="btn-group" style="float: right;" >
+                        <button type="submit" class="btn btn-secondary">ENVIAR</button>
+                        <button type="reset" class="btn btn-secondary">LIMPAR</button>
+                        <a href="/" class="btn btn-secondary"><b>SAIR</b></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+      </form>
       </div>
-    </div>
-  </nav>
-  <br>
-  <div class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10">
-          <h3 class="text-center text-info"><b class="text-info"> Faça agora mesmo o seu cadastro, é simples e rápido!<br>Todos os campos são de preenchimento obrigatório.<br></b>
-            <form action="Script_do_Formulario.php" method="post">
-              <!-- DADOS PESSOAIS-->
-              <fieldset>
-                <legend class="text-info">
-                  <br> </legend>
-                <legend class="text-info">
-                  <br> </legend>
-                <legend class="text-info text-left">Dados Pessoais</legend>
-                <table cellspacing="10">
-                  <tbody>
-                    <tr>
-                      <td class="text-info"> <label for="nome"><b>Nome: </b></label> </td>
-                      <td align="left">
-                        <input type="text" name="email"> </td>
-                      <td> <label for="sobrenome" class="text-info"><b>Sobrenome: </b></label> </td>
-                      <td align="left">
-                        <input type="text" name="sobrenome"> </td>
-                    </tr>
-                    <tr>
-                      <td> <label class="text-info"><b>Nascimento: </b></label> </td>
-                      <td align="left">
-                        <input type="text" name="dia" size="2" maxlength="2" value="">-
-                        <input type="text" name="mes" size="2" maxlength="2" value="">-
-                        <input type="text" name="ano" size="4" maxlength="4" value=""> </td>
-                    </tr>
-                    <tr>
-                      <td> <label for="rg" class="text-info"><b>RG: </b></label> </td>
-                      <td align="left">
-                        <input type="text" name="rg" maxlength="13" size="13"> </td>
-                    </tr>
-                    <tr>
-                      <td> <label class="text-info"><b>CPF:</b></label> </td>
-                      <td align="left">
-                        <input type="text" name="cpf" size="9" maxlength="9"> -
-                        <input type="text" name="cpf2" size="2" maxlength="2"> </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </fieldset>
-              <br>
-              <!-- ENDEREÇO -->
-              <fieldset>
-                <legend class="text-info text-left">Dados de Endereço</legend>
-                <table cellspacing="10">
-                  <tbody>
-                    <tr>
-                      <td> <label for="rua" class="text-info"><b>Rua:</b></label> </td>
-                      <td align="left">
-                        <input type="text" name="rua"> </td>
-                      <td> <label for="numero" class="text-info"><b>Numero:</b></label> </td>
-                      <td align="left">
-                        <input type="text" name="numero" size="4"> </td>
-                    </tr>
-                    <tr>
-                      <td> <label for="bairro" class="text-info"><b>Bairro: </b></label> </td>
-                      <td align="left">
-                        <input type="text" name="bairro"> </td>
-                    </tr>
-                    <tr>
-                      <td> <label for="estado" class="text-info"><b>Estado:</b></label> </td>
-                      <td align="left"> <select name="estado"> 
-    <option value="ac">Acre</option> 
-    <option value="al">Alagoas</option> 
-    <option value="am">Amazonas</option> 
-    <option value="ap">Amapá</option> 
-    <option value="ba">Bahia</option> 
-    <option value="ce">Ceará</option> 
-    <option value="df">Distrito Federal</option> 
-    <option value="es">Espírito Santo</option> 
-    <option value="go">Goiás</option> 
-    <option value="ma">Maranhão</option> 
-    <option value="mt">Mato Grosso</option> 
-    <option value="ms">Mato Grosso do Sul</option> 
-    <option value="mg">Minas Gerais</option> 
-    <option value="pa">Pará</option> 
-    <option value="pb">Paraíba</option> 
-    <option value="pr">Paraná</option> 
-    <option value="pe">Pernambuco</option> 
-    <option value="pi">Piauí</option> 
-    <option value="rj">Rio de Janeiro</option> 
-    <option value="rn">Rio Grande do Norte</option> 
-    <option value="ro">Rondônia</option> 
-    <option value="rs">Rio Grande do Sul</option> 
-    <option value="rr">Roraima</option> 
-    <option value="sc">Santa Catarina</option> 
-    <option value="se">Sergipe</option> 
-    <option value="sp">São Paulo</option> 
-    <option value="to">Tocantins</option> 
-   </select> </td>
-                    </tr>
-                    <tr>
-                      <td> <label for="cidade" class="text-info"><b>Cidade: </b></label> </td>
-                      <td align="left">
-                        <input type="text" name="cidade"> </td>
-                    </tr>
-                    <tr>
-                      <td> <label for="cep" class="text-info"><b>CEP: </b></label> </td>
-                      <td align="left"> <b><input type="text" name="cep" size="5" maxlength="5"> -
-              <input type="text" name="cep2" size="3" maxlength="3"></b> </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </fieldset>
-              <br>
-              <!-- DADOS DE LOGIN -->
-              <fieldset>
-                <legend class="text-info text-left">Dados de login</legend>
-                <table cellspacing="10">
-                  <tbody>
-                    <tr>
-                      <td> <label for="email" class="text-info"><b>E-mail: </b></label> </td>
-                      <td align="left">
-                        <input type="text" name="email"> </td>
-                    </tr>
-                    <tr>
-                      <td> <label for="imagem" class="text-info"></label> </td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td> <label for="login" class="text-info"><b>Login de usuário: </b></label> </td>
-                      <td align="left">
-                        <input type="text" name="login"> </td>
-                    </tr>
-                    <tr>
-                      <td> <label for="pass" class="text-info"><b>Senha: </b></label> </td>
-                      <td align="left">
-                        <input type="password" name="pass"> </td>
-                    </tr>
-                    <tr>
-                      <td> <label for="passconfirm" class="text-info"><b>Confirme a senha: </b></label> </td>
-                      <td align="left">
-                        <input type="password" name="passconfirm"> </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </fieldset>
-            </form>
-          </h3>
-        </div>
+      <div class="py-5 border border-warning bg-secondary">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-8 my-3">
+                  <h1 class="display-4 text-white text-md-left text-center">Esteja conectado conosco</h1>
+               </div>
+               <div class="col-md-4  text-center align-self-center">
+                  <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-fw fa-facebook fa-3x text-white mx-3"></i></a>
+                  <a href="https://twitter.com/" target="_blank"><i class="fa fa-fw fa-twitter fa-3x text-white mx-3"></i></a>
+                  <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-fw fa-instagram fa-3x text-white mx-3"></i></a>
+               </div>
+            </div>
+         </div>
       </div>
-    </div>
-  </div>
-  <div class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="btn-group">
-            <a href="#" class="btn btn-secondary"><b>ENVIAR</b></a>
-            <a href="#" class="btn btn-secondary"><b>LIMPAR</b></a>
-            <a href="/" class="btn btn-secondary"><b>SAIR</b></a>
-          </div>
-        </div>
+      <div class="bg-dark text-white">
+         <div class="container">
+            <div class="row">
+               <div class="p-4 col-md-3">
+                  <h2 class="mb-4 text-light bg-dark">New Elite</h2>
+                  <p class="text-white"> Uma empresa para o que você precisar, controle de estoque e segurança.</p>
+               </div>
+               <div class="p-4 col-md-3">
+                  <h2 class="mb-4 text-light">Mapsite</h2>
+                  <ul class="list-unstyled">
+                     <a href="/" class="text-white">Home</a>
+                     <br>
+                     <a href="/quem-somos" class="text-white">Sobre nós</a>
+                     <br>
+                     <a href="/planos" class="text-white">Planos</a>
+                     <br>
+                     <a href="/login" class="text-white">Login</a>
+                  </ul>
+               </div>
+               <div class="p-4 col-md-3">
+                  <h2 class="mb-4">Contact</h2>
+                  <p>+55 11 27244706</p>
+                  <p>
+                     <a href="mailto:info@pingendo.com" class="text-white"><i class="fa d-inline mr-3 fa-envelope-o text-light"></i>c</a>ontato@newelite.com
+                  </p>
+                  <p>
+                     <a href="https://goo.gl/maps/AUq7b9W7yYJ2" class="text-white" target="_blank"><i class="fa d-inline mr-3 fa-map-marker text-light"></i>7</a>98 Rua Augusta,BR
+                  </p>
+               </div>
+               <div class="p-4 col-md-3">
+                  <h2 class="mb-4 text-light">Subscribe</h2>
+                  <form>
+                     <fieldset class="form-group text-white"> <label for="exampleInputEmail1">
+                        Receba nossa newsletter</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email"> 
+                     </fieldset>
+                     <button type="submit" class="btn btn-outline-light">Inscrever-se</button>
+                  </form>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12 mt-3">
+                  <p class="text-center text-white">© Copyright 2017 Newelite - All rights reserved. </p>
+               </div>
+            </div>
+         </div>
       </div>
-    </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-  <div class="text-light bg-dark">
-    <div class="container">
-      <div class="row">
-        <div class="p-4 col-md-3">
-          <h2 class="mb-4 text-light">New Elite</h2>
-          <p class="text-white">A company for whatever you may need, from website prototyping to publishing</p>
-        </div>
-        <div class="p-4 col-md-3">
-          <h2 class="mb-4 text-light">Mapsite</h2>
-          <ul class="list-unstyled">
-            <a href="/" class="text-white">Home</a>
-            <br>
-            <a href="/quem-somos" class="text-white">Sobre nós</a>
-            <br>
-            <a href="/planos" class="text-white">Planos</a>
-            <br>
-            <a href="/login" class="text-white">Login</a>
-          </ul>
-        </div>
-        <div class="p-4 col-md-3">
-          <h2 class="mb-4">Contato</h2>
-          <p>+55 11 27244706</p>
-          <p>
-            <a href="mailto:info@pingendo.com" class="text-white"><i class="fa d-inline mr-3 fa-envelope-o text-light"></i>c</a>ontato@newelite.com</p>
-          <p>
-            <a href="https://goo.gl/maps/AUq7b9W7yYJ2" class="text-white" target="_blank"><i class="fa d-inline mr-3 fa-map-marker text-light"></i>7</a>98 Rua Augusta,BR</p>
-        </div>
-        <div class="p-4 col-md-3">
-          <h2 class="mb-4 text-light">Se inscrever </h2>
-          <form>
-            <fieldset class="form-group text-white"> <label for="exampleInputEmail1">
-Receba nossa newsletter</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email"> </fieldset>
-            <button type="submit" class="btn btn-outline-light">Inscrever-se</button>
-          </form>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 mt-3">
-          <p class="text-center text-white">© Copyright 2017 Newelite - All rights reserved. </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-</body>
-
+   </body>
 </html>
