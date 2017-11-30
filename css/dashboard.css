@@ -1,0 +1,105 @@
+/ *
+ * Estrutura base
+ * /
+
+/ * Mova o conteúdo porque temos uma barra de navegação fixa com 50px de altura * /
+corpo {
+  padding-top: 50px;
+}
+
+
+/ *
+ * Complementos globais
+ * /
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px sólido #eee;
+}
+
+/ *
+ * Navegação superior
+ * Ocultar borda padrão para remover a linha 1px.
+ * /
+.navbar-fixed-top {
+  borda: 0;
+}
+
+/ *
+ * Barra Lateral
+ * /
+
+/ * Hide for mobile, mostre mais tarde * /
+.Barra Lateral {
+  exibição: nenhum;
+}
+@media (min-width: 768px) {
+  .Barra Lateral {
+    posição: fixo;
+    topo: 51px;
+    fundo: 0;
+    esquerda: 0;
+    índice z: 1000;
+    exibição: bloco;
+    preenchimento: 20px;
+    Overflow-x: oculto;
+    overflow-y: auto; / * Conteúdo rolável se viewport for menor do que o conteúdo. * /
+    background-color: # f5f5f5;
+    fronteira-direita: 1px sólido #eee;
+  }
+}
+
+/ * Navegação na barra lateral * /
+.nav-sidebar {
+  margem direita: -21px; / * 20px padding + 1px border * /
+  margem inferior: 20px;
+  margem esquerda: -20px;
+}
+.nav-sidebar> li> a {
+  padding-right: 20px;
+  preenchimento-esquerda: 20px;
+}
+.nav-sidebar> .active> a,
+.nav-sidebar> .active> a: hover,
+.nav-sidebar> .active> a: focus {
+  cor: #fff;
+  cor de fundo: # 428bca;
+}
+
+
+/ *
+ * Conteúdo principal
+ * /
+
+.a Principal {
+  preenchimento: 20px;
+}
+@media (min-width: 768px) {
+  .a Principal {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main -page-header {
+  margin-top: 0;
+}
+
+
+/ *
+ * Idéias do painel de posição
+ * /
+
+.placeholders {
+  margem inferior: 30px;
+  texto-alinhamento: centro;
+}
+.placeholders h4 {
+  margem inferior: 0;
+}
+.placeholder {
+  margem inferior: 20px;
+}
+.place img {
+  exibição: bloco em linha;
+  radio de fronteira: 50%;
+}
