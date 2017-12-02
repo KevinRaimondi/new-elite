@@ -15,6 +15,35 @@
 		return $value==$selected ? ' selected="selected"' : '';
 	}
 	
+		if(isset($_GET['msg'])){
+		$msg = $_GET['msg'];
+		switch($msg){
+			case 1:
+			?>
+				<div class="message">
+					<div class="alert alert-danger">
+						<a href="/" class="close" data-dismiss="alert">&times</a>
+						Não foi possivel excluir sua conta, por favor entre em contato.
+					</div>
+				</div>
+			<?php
+		}
+	}
+	
+	function excluir(){
+		$id = $dados['id'];
+		
+		$query = mysqli_query ($conn,"DELETE FROM `usuario` WHERE `usuario`.`id` = $id");
+	
+		if ($query){
+			header('Location: ../sair.php"');
+			header('Location: /index.php?msg=3"');
+		}else{
+			header('Location: /painel/index.php?msg=1"');
+		}
+		
+	}
+	
 ?>
 
 <!DOCTYPE html>
@@ -159,9 +188,9 @@
                         </tr>
                      </table>
                      </br>
-					<form method="post" action="insert()">
+					<form method="post" action="excluir()">
 						<div class="btn-group" style="float: right;" >
-							<button type="reset" class="btn btn-secondary">EXCLUIR|CONTA</button>
+							<button type="submit" class="btn btn-secondary">EXCLUIR | CONTA</button>
 							<a href="../sair.php" class="btn btn-secondary"><b>SAIR</b></a>
 						</div>
 					</form>

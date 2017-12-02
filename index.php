@@ -22,6 +22,16 @@
 				</div>
 			<?php
 			break;
+			case 3:
+			?>
+				<div class="message">
+					<div class="alert alert-success">
+						<a href="/" class="close" data-dismiss="alert">&times</a>
+						Conta excluida com sucesso.
+					</div>
+				</div>
+			<?php
+			break;
 		}
 	}
  ?>
