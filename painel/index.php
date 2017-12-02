@@ -10,7 +10,7 @@
 	$senha = $_SESSION["senha"];
 	
 	$query = mysqli_query($conn,"SELECT id, login, senha, email, nome, sobrenome, rg, cpf, nascimento, rua, numero, cep, bairro, cidade, estado FROM `usuario` WHERE login='$login' AND senha='$senha'");
-	$dados = mysql_fetch_array($query)
+	$dados = mysqli_num_rows($query);
 	
 ?>
 
