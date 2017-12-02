@@ -68,7 +68,7 @@
       </nav>
       <div class="py-5 opaque-overlay bg-dark text-dark" style="background-image: url(&quot;../imagens/a (1).png&quot;);">
       <form class="" method="post" action="#" >	  
-         <div class="container py-5">
+         <div class="container py-4">
             <div class="row">
                   <div class="col-md-8" style="margin-left: 20%;">
                      <h1 class="text-gray-dark">Dados Pessoais</h1>
