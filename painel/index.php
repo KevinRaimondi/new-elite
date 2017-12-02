@@ -177,7 +177,7 @@
                   </div>
             </div>
       </form>
-	  <form class="" method="post" action="../excluir.php" >
+	  <form class="col-md-8" method="post" action="../excluir.php" >
 		<input type="hidden" name="id" value="<?php echo $dados['id'] ?>" />
 		<div class="btn-group" style="float: right;" >
 			<button type="submit" class="btn btn-secondary">EXCLUIR | CONTA</button>
