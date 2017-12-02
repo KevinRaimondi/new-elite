@@ -104,7 +104,7 @@
               <p><b>Armazenamento em nuvem&nbsp;</b></p>
             </div>
             <div class="card-block">
-              <a href="../imagens/em_construcao1.jpg" class="btn btn-secondary"><b>COMPRAR</b></a>
+              <a href="/em_construcao" class="btn btn-secondary"><b>COMPRAR</b></a>
             </div>
           </div>
         </div>
