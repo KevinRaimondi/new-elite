@@ -52,7 +52,16 @@
             <a class="nav-link" href="/quem-somos"><b class="text-light">QUEM SOMOS</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/login"><b class="text-light my-2">LOGIN | CADASTRE-SE<br></b></a>
+		  <?php 
+		  
+		  	if(!isset($_SESSION["login"]) || !isset($_SESSION["senha"])){
+				echo <a class="nav-link" href="/login"><b class="text-light my-2">LOGIN | CADASTRE-SE<br></b></a>
+			}else{
+				echo <a class="nav-link" href="../sair.php"><b class="text-light my-2">SAIR<br></b></a>
+			}
+			
+		  ?>
+            
           </li>
         </ul>
       </div>
