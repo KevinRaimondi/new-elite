@@ -27,7 +27,7 @@
 	  <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
 	  <script type="text/javascript" src="../js/jquery.mask.min.js"></script>
 	  <script type="text/javascript" src="../js/mask.js"></script>
-      <title> Cadastro </title>
+      <title> Painel </title>
       <meta name="description" content="Aprenda a criar um site completo que usa formulários em HTML">
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
    </head>
