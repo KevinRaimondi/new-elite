@@ -22,7 +22,7 @@
           </li>
 		  <?php 
 		  
-		  	require ("conexao.php");
+		  	require ("../conexao.php");
 			session_start();
 		  
 		  	if(!isset($_SESSION["login"]) || !isset($_SESSION["senha"])){
