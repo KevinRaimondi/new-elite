@@ -72,8 +72,6 @@
       </div>
     </div>
   </div>
-  <img src="https://www.startminer.com/banners/startminer-leaderboard_256.gif" alt="startMiner - free and simple next generation Bitcoin mining software" class="float-right w-50">
-  <img src="https://www.startminer.com/banners/startminer-leaderboard_256.gif" alt="startMiner - free and simple next generation Bitcoin mining software" class="w-50">
   <div class="text-center bg-danger py-5" style="background-image: url(&quot;imagens/a (7).png&quot;);">
     <div class="container">
       <div class="row">
