@@ -12,16 +12,6 @@
 				</div>
 			<?php
 			break;
-			case 2:
-			?>
-				<div class="message">
-					<div class="alert alert-danger">
-						<a href="/cadastro" class="close" data-dismiss="alert">&times</a>
-						Campos obrigatorios não informados.
-					</div>
-				</div>
-			<?php
-			break;
 		}
 	}
 
@@ -42,19 +32,10 @@
 	this=> $cidade  			= $_POST["cidade"];
 	this=> $estado  			= $_POST["estado"];
 	
-	
-	if(email == "" || usuario == "" || password == "" ||
-	passwordConfirm == "" || nome == "" || sobrenome == "" || 
-	rg == "" || cpf == "" || rua == "" || 
-	numero == "" || cep == "" || bairro == "" || 
-	cidade == "" || estado == ""){
-		header('Location: /cadastro/index.php?msg=1"');
-	}
-	
+		
 	if(password != passwordConfirm){
 		header('Location: /cadastro/index.php?msg=1"');
 	}
-	
 	
 	require_once("../conexao.php");
 		
