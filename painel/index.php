@@ -15,24 +15,6 @@
 	function selected( $value, $selected ){
     return $value==$selected ? ' selected="selected"' : '';
 	
-	function mask($val, $mask){
-		$maskared = '';
-		$k = 0;
-		for($i = 0; $i<=strlen($mask)-1; $i++){
-			if($mask[$i] == '#'){
-				if(isset($val[$k])){
-					$maskared .= $val[$k++];
-				}
-			}else{
-				if(isset($mask[$i])){
-					$maskared .= $mask[$i];
-				}
-			}
-		}
-			return $maskared;
-		}
-	}
-	
 ?>
 
 <!DOCTYPE html>
@@ -92,12 +74,12 @@
                         <tr>
                            <td  style="display: table; float:left; margin-right:10px">
                               <div > <label>RG: </label>
-                                 <input type="text" name="rg" class="form-control rg" placeholder="RG" value="<?php echo mask($dados['rg'],'##.###.###-#'); ?>" required="" autofocus=""> 
+                                 <input type="text" name="rg" class="form-control rg" placeholder="RG" value="<?php echo $dados['rg'] ?>" required="" autofocus=""> 
                               </div>
                            </td>
                            <td style="display: table; float:left; margin-right:10px" >
                               <div > <label>CPF: </label>
-                                 <input type="text" name="cpf" class="form-control cpf" placeholder="CPF" value="<?php echo mask($dados['cpf'],'####.###.###-##'); ?>" required="" autofocus=""> 
+                                 <input type="text" name="cpf" class="form-control cpf" placeholder="CPF" value="<?php echo $dados['cpf'] ?>" required="" autofocus=""> 
                               </div>
                            </td>
                            <td colspan="4">
@@ -125,7 +107,7 @@
                         <tr>
                            <td style="display: table; float:left; margin-right:10px">
                               <div> <label>Cep: </label>
-                                 <input type="text" name="cep" class="form-control cep" placeholder="Cep" value="<?php echo mask($dados['cep'],'#####-###'); ?>" required="" autofocus=""> 
+                                 <input type="text" name="cep" class="form-control cep" placeholder="Cep" value="<?php echo $dados['cep'] ?>" required="" autofocus=""> 
                               </div>
                            </td>
                            <td colspan="4">
