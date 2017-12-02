@@ -64,7 +64,7 @@
                            <td style="display: table; float:left; margin-right:10px"/>
                            <td>
                               <div > <label>Sobrenome: </label>
-                                 <input type="text" name="sobrenome" class="form-control" placeholder="Sobrenome" value="<?php echo $dados['senha'] ?>" required="" autofocus=""> 
+                                 <input type="text" name="sobrenome" class="form-control" placeholder="Sobrenome" value="<?php echo $dados['sobrenome'] ?>" required="" autofocus=""> 
                               </div>
                            </td>
                         </tr>
