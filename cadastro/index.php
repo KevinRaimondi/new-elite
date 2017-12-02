@@ -63,7 +63,7 @@
          </div>
       </nav>
       <div class="py-5 opaque-overlay bg-dark text-dark" style="background-image: url(&quot;../imagens/a (1).png&quot;);">
-      <form class="" method="post" action="../cad_usuario.php" >
+      <form class="" method="post" action="cad_usuario.php" >
          <div class="container py-5">
             <div class="row">
                <div class="col-md-4">
