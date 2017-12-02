@@ -54,6 +54,9 @@
           
 		  <?php 
 		  
+		  	require ("../conexao.php");
+			session_start();
+		  
 		  	if(!isset($_SESSION["login"]) || !isset($_SESSION["senha"])){
 				echo '<li class="nav-item">';
 				echo '<a class="nav-link" href="/login"><b class="text-light my-2">LOGIN | CADASTRE-SE<br></b></a>';
