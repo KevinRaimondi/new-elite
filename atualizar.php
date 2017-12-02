@@ -35,7 +35,7 @@
 		}
 		
 		if($acao == "sair"){
-			header('Location: sair.php"');
+			header('Location: /sair.php"');
 		}
 		
 ?>
