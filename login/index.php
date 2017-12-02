@@ -1,3 +1,31 @@
+<?php 
+	if(isset($_GET['msg'])){
+		$msg = $_GET['msg'];
+		switch($msg){
+			case 1:
+			?>
+				<div class="message">
+					<div class="alert alert-danger">
+						<a href="/login" class="close" data-dismiss="alert">&times</a>
+						Usúario ou Senha errados tente outra vez.
+					</div>
+				</div>
+			<?php
+			break;
+			case 2:
+			?>
+				<div class="message">
+					<div class="alert alert-success">
+						<a href="/login" class="close" data-dismiss="alert">&times</a>
+						Cadastrado com sucesso.
+					</div>
+				</div>
+			<?php
+			break;
+		}
+	}
+ ?>
+
 <!DOCTYPE html>
 <html>
 

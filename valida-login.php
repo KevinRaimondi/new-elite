@@ -10,6 +10,6 @@
 		$_SESSION['senha'] = $_POST['inputPassword'];
 		header('Location: /planos');
 	}else{
-		header('Location: /login');
+		header('Location: /login/index.php?msg=1"');
 	}
 ?>
