@@ -159,19 +159,12 @@
                         </tr>
                      </table>
                      </br>
-					 
-                     
-					 
 					<form method="post" action="insert()">
 						<div class="btn-group" style="float: right;" >
-							<button type="submit" class="btn btn-secondary">ENVIAR</button>
-							<button type="reset" class="btn btn-secondary">EXCLUIR - CONTA</button>
+							<button type="reset" class="btn btn-secondary">EXCLUIR|CONTA</button>
 							<a href="../sair.php" class="btn btn-secondary"><b>SAIR</b></a>
 						</div>
 					</form>
-
-
-
                   </div>
             </div>
       </form>
