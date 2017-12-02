@@ -8,7 +8,7 @@
 		session_start();
 		$_SESSION['login'] = $_POST['inputUsuario'];
 		$_SESSION['senha'] = $_POST['inputPassword'];
-		header('Location: /planos');
+		header('Location: /painel');
 	}else{
 		header('Location: /login/index.php?msg=1"');
 	}

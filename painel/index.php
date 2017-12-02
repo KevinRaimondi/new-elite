@@ -1,29 +1,9 @@
 <?php 
 
-	if(isset($_GET['msg'])){
-		$msg = $_GET['msg'];
-		switch($msg){
-			case 1:
-			?>
-				<div class="message">
-					<div class="alert alert-danger">
-						<a href="/cadastro" class="close" data-dismiss="alert">&times</a>
-						Senhas não combinam.
-					</div>
-				</div>
-			<?php
-			break;
-			case 2:
-			?>
-				<div class="message">
-					<div class="alert alert-danger">
-						<a href="/cadastro" class="close" data-dismiss="alert">&times</a>
-						Favor selecionar um estado.
-					</div>
-				</div>
-			<?php
-			break;
-		}
+	require ("conexao.php");
+	session_start();
+	if(!isset($_SESSION["login"]) || !isset($_SESSION["senha"])){
+		header ("Location: index.php?msg=1");
 	}
 ?>
 
@@ -59,7 +39,7 @@
                      <a class="nav-link" href="/quem-somos"><b class="text-light">QUEM SOMOS</b></a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="/login"><b class="text-light my-2">LOGIN | CADASTRE-SE<br></b></a>
+                     <a class="nav-link" href="../sair.php"><b class="text-light my-2">SAIR<br></b></a>
                   </li>
                </ul>
             </div>
@@ -194,7 +174,7 @@
                      <div class="btn-group" style="float: right;" >
                         <button type="submit" class="btn btn-secondary">ENVIAR</button>
                         <button type="reset" class="btn btn-secondary">LIMPAR</button>
-                        <a href="/login" class="btn btn-secondary"><b>SAIR</b></a>
+                        <a href="/index.php?msg=2" class="btn btn-secondary"><b>SAIR</b></a>
                      </div>
                   </div>
                </div>
