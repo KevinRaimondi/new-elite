@@ -1,5 +1,7 @@
 ﻿<?php 
 
+	require("conexao.php");
+
 	this=> $email 				= $_POST["email"];
 	this=> $usuario				= $_POST["usuario"];
 	this=> $password			= $_POST["password"];
@@ -25,9 +27,7 @@
 	if(estado == "select"){
 		header('Location: /cadastro/index.php?msg=2"');
 	}
-	
-	require("conexao.php");
-		
+			
 	$query = mysqli_query ($conn,"INSERT INTO `usuario` (`id`, `login`, `senha`, `email`, `nome`, `sobrenome`, `rg`, `cpf`, `nascimento`, `rua`, `numero`, `cep`, `bairro`, `cidade`, `estado`) VALUES (NULL, '$usuario', '$password', '$email', '$nome', '$sobrenome', '$rg', '$cpf', NULL, '$rua', '$numero', '$cep', '$bairro', '$cidade', '$estado')");
 	
 ?>
