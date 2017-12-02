@@ -1,4 +1,13 @@
 <?php 
+
+		  
+	require ("../conexao.php");
+	session_start();
+		  
+	if(isset($_SESSION["login"]) || isset($_SESSION["senha"])){
+		header('Location: /painel"');
+	}
+
 	if(isset($_GET['msg'])){
 		$msg = $_GET['msg'];
 		switch($msg){
