@@ -23,9 +23,25 @@
                   <li class="nav-item">
                      <a class="nav-link" href="/quem-somos"><b class="text-light">QUEM SOMOS</b></a>
                   </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="/login"><b class="text-light my-2">LOGIN | CADASTRE-SE<br></b></a>
-                  </li>
+		  <?php 
+		  
+		  	require ("../conexao.php");
+			session_start();
+		  
+		  	if(!isset($_SESSION["login"]) || !isset($_SESSION["senha"])){
+				echo '<li class="nav-item">';
+				echo '<a class="nav-link" href="/login"><b class="text-light my-2">LOGIN | CADASTRE-SE<br></b></a>';
+				echo '</li>';
+			}else{
+				echo '<li class="nav-item">';
+				echo '<a class="nav-link" href="/painel"><b class="text-light my-2">PAINEL<br></b></a>';
+				echo '</li>';
+				echo '<li class="nav-item">';
+				echo '<a class="nav-link" href="../sair.php"><b class="text-light my-2">SAIR<br></b></a>';
+				echo '</li>';
+			}
+			
+		  ?>
                </ul>
             </div>
          </div>

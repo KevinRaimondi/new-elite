@@ -51,7 +51,6 @@
           <li class="nav-item">
             <a class="nav-link" href="/quem-somos"><b class="text-light">QUEM SOMOS</b></a>
           </li>
-          
 		  <?php 
 		  
 		  	require ("conexao.php");
@@ -71,8 +70,6 @@
 			}
 			
 		  ?>
-            
-         
         </ul>
       </div>
     </div>
