@@ -61,30 +61,30 @@
                         <tr>
                            <td colspan="3">
                               <div> <label>Nome: </label>
-                                 <input type="text" name="nome" class="form-control" placeholder="Nome" value="<?php echo $dados['nome'] ?>" required="" autofocus=""> 
+                                 <input readonly type="text" name="nome" class="form-control" placeholder="Nome" value="<?php echo $dados['nome'] ?>" required="" autofocus=""> 
                               </div>
                            </td>
                            <td style="display: table; float:left; margin-right:10px"/>
                            <td>
                               <div > <label>Sobrenome: </label>
-                                 <input type="text" name="sobrenome" class="form-control" placeholder="Sobrenome" value="<?php echo $dados['sobrenome'] ?>" required="" autofocus=""> 
+                                 <input readonly type="text" name="sobrenome" class="form-control" placeholder="Sobrenome" value="<?php echo $dados['sobrenome'] ?>" required="" autofocus=""> 
                               </div>
                            </td>
                         </tr>
                         <tr>
                            <td  style="display: table; float:left; margin-right:10px">
                               <div > <label>RG: </label>
-                                 <input type="text" name="rg" class="form-control rg" placeholder="RG" value="<?php echo $dados['rg'] ?>" required="" autofocus=""> 
+                                 <input readonly type="text" name="rg" class="form-control rg" placeholder="RG" value="<?php echo $dados['rg'] ?>" required="" autofocus=""> 
                               </div>
                            </td>
                            <td style="display: table; float:left; margin-right:10px" >
                               <div > <label>CPF: </label>
-                                 <input type="text" name="cpf" class="form-control cpf" placeholder="CPF" value="<?php echo $dados['cpf'] ?>" required="" autofocus=""> 
+                                 <input readonly type="text" name="cpf" class="form-control cpf" placeholder="CPF" value="<?php echo $dados['cpf'] ?>" required="" autofocus=""> 
                               </div>
                            </td>
                            <td colspan="4">
                               <div > <label>Nascimento: </label>
-                                 <input type="Date" name="nascimento" class="form-control" placeholder="Nascimento"  value="<?php echo $dados['nascimento'] ?>" autofocus=""> 
+                                 <input readonly type="Date" name="nascimento" class="form-control" placeholder="Nascimento"  value="<?php echo $dados['nascimento'] ?>" autofocus=""> 
                               </div>
                            </td>
                         </tr>
@@ -94,31 +94,31 @@
                         <tr>
                            <td colspan="3" >
                               <div> <label>Rua: </label>
-                                 <input type="text" name="rua" class="form-control" placeholder="Rua"  value="<?php echo $dados['rua'] ?>" required="" autofocus=""> 
+                                 <input readonly type="text" name="rua" class="form-control" placeholder="Rua"  value="<?php echo $dados['rua'] ?>" required="" autofocus=""> 
                               </div>
                            </td>
                            <td style="display: table; float:left; margin-right:10px"/>
                            <td>
                               <div > <label>Numero: </label>
-                                 <input type="Number" name="numero" class="form-control numero" placeholder="" value="<?php echo $dados['numero'] ?>" required="" autofocus=""> 
+                                 <input readonly type="Number" name="numero" class="form-control numero" placeholder="" value="<?php echo $dados['numero'] ?>" required="" autofocus=""> 
                               </div>
                            </td>
                         </tr>
                         <tr>
                            <td style="display: table; float:left; margin-right:10px">
                               <div> <label>Cep: </label>
-                                 <input type="text" name="cep" class="form-control cep" placeholder="Cep" value="<?php echo $dados['cep'] ?>" required="" autofocus=""> 
+                                 <input readonly type="text" name="cep" class="form-control cep" placeholder="Cep" value="<?php echo $dados['cep'] ?>" required="" autofocus=""> 
                               </div>
                            </td>
                            <td colspan="4">
                               <div> <label>Bairro: </label>
-                                 <input type="text" name="bairro" class="form-control" placeholder="Bairro" value="<?php echo $dados['bairro'] ?>" required="" autofocus=""> 
+                                 <input readonly type="text" name="bairro" class="form-control" placeholder="Bairro" value="<?php echo $dados['bairro'] ?>" required="" autofocus=""> 
                               </div>
                            </td>
                         <tr>
                            <td style="display: table; float:left; margin-right:10px">
                               <div > <label>Cidade: </label>
-                                 <input type="text" name="cidade" class="form-control" placeholder="Cidade" value="<?php echo $dados['cidade'] ?>" required="" autofocus=""> 
+                                 <input readonly type="text" name="cidade" class="form-control" placeholder="Cidade" value="<?php echo $dados['cidade'] ?>" required="" autofocus=""> 
                               </div>
                            </td>
                            <td>
@@ -216,7 +216,7 @@
                   <form>
                      <fieldset class="form-group text-white"> <label for="exampleInputEmail1">
                         Receba nossa newsletter</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email"> 
+                        <input readonly type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email"> 
                      </fieldset>
                      <button type="submit" class="btn btn-outline-light">Inscrever-se</button>
                   </form>
