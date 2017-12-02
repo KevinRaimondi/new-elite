@@ -58,7 +58,7 @@
                         <tr>
                            <td colspan="3">
                               <div> <label>Nome: </label>
-                                 <input type="text" name="nome" class="form-control" placeholder="Nome" value="<?php echo $dados['login'] ?>" required="" autofocus=""> 
+                                 <input type="text" name="nome" class="form-control" placeholder="Nome" value="<?php echo $dados['nome'] ?>" required="" autofocus=""> 
                               </div>
                            </td>
                            <td style="display: table; float:left; margin-right:10px"/>
