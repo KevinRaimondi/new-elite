@@ -21,11 +21,11 @@
 	$estado  			= $_POST["estado"];
 	
 		
-	if(password != passwordConfirm){
+	if($password != $passwordConfirm){
 		header('Location: /cadastro/index.php?msg=1"');
 	}
 	
-	if(estado == "select"){
+	if($estado == "select"){
 		header('Location: /cadastro/index.php?msg=2"');
 	}
 			
