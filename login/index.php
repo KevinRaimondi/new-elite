@@ -69,7 +69,7 @@
           <div class="col-md-12">
             <h1 class="text-gray-dark">Já é cadastrado? </h1>
             <p class="lead mb-4"> Então entre com seus dados de login e senha.</p>
-            <form class="" method="post" action="valida-login.php">
+            <form class="" method="post" action="../valida-login.php">
               <div class="form-group" for="inputUsuario"> <label>Usuário</label>
                 <input type="usuario" id="inputUsuario" name="inputUsuario" class="form-control" placeholder="Digitar o Usuário" required="" autofocus=""> </div>
               <div class="form-group"> <label>Senha</label>
