@@ -1,31 +1,25 @@
 ﻿<?php 
 
 	require("conexao.php");
+                                       
+	$email 			   = $_POST['email'];               
+	$usuario		   = $_POST['usuario'];             
+	$password		   = $_POST['password'];            
+	$passwordConfirm   = $_POST['passwordConfirm'];     
+	$nome 			   = $_POST['nome'];                
+	$sobrenome		   = $_POST['sobrenome'];           
+	$rg				   = $_POST['rg'];                  
+	$cpf			   = $_POST['cpf'];                 
+														
+	$nascimento  	   = $_POST['nascimento'];          
+														
+	$rua  			   = $_POST['rua'];                 
+	$numero  		   = $_POST['numero'];              
+	$cep  			   = $_POST['cep'];                 
+	$bairro  		   = $_POST['bairro'];              
+	$cidade  		   = $_POST['cidade'];              
+	$estado  		   = $_POST['estado'];              
 
-
-	
-	session_start();
-	
-	$email 			  = 	$_SESSION['email']			 = $_POST['email'];                 
-	$usuario		  = 	$_SESSION['usuario']		 = $_POST['usuario'];               
-	$password		  = 	$_SESSION['password']		 = $_POST['password'];              
-	$passwordConfirm  = 	$_SESSION['passwordConfirm'] = $_POST['passwordConfirm'];       
-	$nome 			  = 	$_SESSION['nome'] 			 = $_POST['nome'];                  
-	$sobrenome		  = 	$_SESSION['sobrenome'] 		 = $_POST['sobrenome'];             
-	$rg				  = 	$_SESSION['rg'] 			 = $_POST['rg'];                    
-	$cpf			  = 	$_SESSION['cpf'] 			 = $_POST['cpf'];                   
-					  =    	                                                                
-	$nascimento  	  = 	$_SESSION['nascimento'] 	 = $_POST['nascimento'];            
-					  =    	                                                                
-	$rua  			  = 	$_SESSION['rua'] 			 = $_POST['rua'];                   
-	$numero  		  = 	$_SESSION['numero'] 		 = $_POST['numero'];                
-	$cep  			  = 	$_SESSION['cep'] 			 = $_POST['cep'];                   
-	$bairro  		  = 	$_SESSION['bairro'] 		 = $_POST['bairro'];                
-	$cidade  		  = 	$_SESSION['cidade'] 		 = $_POST['cidade'];                
-	$estado  		  = 	$_SESSION['estado'] 		 = $_POST['estado'];                
-
-	
-		
 	if($password != $passwordConfirm){
 		header('Location: /cadastro/index.php?msg=1"');
 	}
