@@ -75,7 +75,6 @@
             </div>
             <div class="card-block my-3">
               <h1><b>Grátis</b></h1>
-              <p>15 dias</p>
               <hr>
               <p><b>1 Aparelho conectado</b></p>
               <hr>
@@ -84,10 +83,6 @@
               <p><b>Limite de 50 cadastros</b></p>
               <hr>
               <p><b>Armazenamento em nuvem&nbsp;</b></p>
-            </div>
-            <div class="card-block">
-              <a href="https://www.startminer.com/1492574" target="_blank"> </a>
-              <a href="/login" class="btn btn-secondary"><b>TESTAR</b></a>
             </div>
           </div>
         </div>
@@ -109,7 +104,7 @@
               <p><b>Armazenamento em nuvem&nbsp;</b></p>
             </div>
             <div class="card-block">
-              <a href="imagens/em_construcao1.jpg" class="btn btn-secondary"><b>COMPRAR</b></a>
+              <a href="../imagens/em_construcao1.jpg" class="btn btn-secondary"><b>COMPRAR</b></a>
             </div>
           </div>
         </div>
@@ -131,7 +126,7 @@
               <p><b>Armazenamento em nuvem&nbsp;</b></p>
             </div>
             <div class="card-block">
-              <a href="imagens/em_construcao1.jpg" class="btn btn-secondary"><b>COMPRAR</b></a>
+              <a href="/em_construcao" class="btn btn-secondary"><b>COMPRAR</b></a>
             </div>
           </div>
         </div>
@@ -153,7 +148,7 @@
               <p><b>Armazenamento em nuvem&nbsp;</b></p>
             </div>
             <div class="card-block">
-              <a href="imagens/em_construcao1.jpg" class="btn btn-secondary"><b>COMPRAR</b></a>
+              <a href="/em_construcao" class="btn btn-secondary"><b>COMPRAR</b></a>
             </div>
           </div>
         </div>
