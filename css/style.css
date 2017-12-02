@@ -10,6 +10,11 @@
 	right: 17%;
 }
 
+.nav-bar-menu{
+	background-color: #bb1c22 !important; 
+	box-shadow: 0 0 5px 1px #9A9A9A;
+}
+
 .alert {
   padding: 0.75rem 1.25rem;
   /*margin-bottom: 1rem;*/
@@ -3740,10 +3745,13 @@ a.bg-light:focus, a.bg-light:hover {
   background-color: #dae0e5 !important; }
 
 .bg-dark {
-  background-color: #343a40 !important; }
+  background-color: #bb1c22 !important; 
+  }
 
 a.bg-dark:focus, a.bg-dark:hover {
-  background-color: #1d2124 !important; }
+  background-color: #1d2124 !important;
+  }
+  
 
 .bg-white {
   background-color: #fff !important; }
