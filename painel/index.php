@@ -5,6 +5,10 @@
 	if(!isset($_SESSION["login"]) || !isset($_SESSION["senha"])){
 		header ("Location: /index.php?msg=1");
 	}
+	
+	$query = mysqli_query($conn,"SELECT id, login, senha, email, nome, sobrenome, rg, cpf, nascimento, rua, numero, cep, bairro, cidade, estado FROM `usuario` WHERE login='$_SESSION["login"]' AND senha='$_SESSION["senha"]'");
+	$dados = mysql_fetch_array($query)
+	
 ?>
 
 <!DOCTYPE html>
@@ -51,30 +55,30 @@
                         <tr>
                            <td colspan="3">
                               <div> <label>Nome: </label>
-                                 <input type="text" name="nome" class="form-control" placeholder="Nome" required="" autofocus=""> 
+                                 <input type="text" name="nome" class="form-control" placeholder="Nome" value="$dados['login']" required="" autofocus=""> 
                               </div>
                            </td>
                            <td style="display: table; float:left; margin-right:10px"/>
                            <td>
                               <div > <label>Sobrenome: </label>
-                                 <input type="text" name="sobrenome" class="form-control" placeholder="Sobrenome" required="" autofocus=""> 
+                                 <input type="text" name="sobrenome" class="form-control" placeholder="Sobrenome" value="$dados['senha']" required="" autofocus=""> 
                               </div>
                            </td>
                         </tr>
                         <tr>
                            <td  style="display: table; float:left; margin-right:10px">
                               <div > <label>RG: </label>
-                                 <input type="text" name="rg" class="form-control rg" placeholder="RG" required="" autofocus=""> 
+                                 <input type="text" name="rg" class="form-control rg" placeholder="RG" value="$dados['email']" required="" autofocus=""> 
                               </div>
                            </td>
                            <td style="display: table; float:left; margin-right:10px" >
                               <div > <label>CPF: </label>
-                                 <input type="text" name="cpf" class="form-control cpf" placeholder="CPF" required="" autofocus=""> 
+                                 <input type="text" name="cpf" class="form-control cpf" placeholder="CPF" value="$dados['nome']" required="" autofocus=""> 
                               </div>
                            </td>
                            <td colspan="4">
                               <div > <label>Nascimento: </label>
-                                 <input type="Date" name="nascimento" class="form-control" placeholder="Nascimento" autofocus=""> 
+                                 <input type="Date" name="nascimento" class="form-control" placeholder="Nascimento"  value="$dados['sobrenome']" autofocus=""> 
                               </div>
                            </td>
                         </tr>
@@ -84,37 +88,37 @@
                         <tr>
                            <td colspan="3" >
                               <div> <label>Rua: </label>
-                                 <input type="text" name="rua" class="form-control" placeholder="Rua" required="" autofocus=""> 
+                                 <input type="text" name="rua" class="form-control" placeholder="Rua"  value="$dados['rua']" required="" autofocus=""> 
                               </div>
                            </td>
                            <td style="display: table; float:left; margin-right:10px"/>
                            <td>
                               <div > <label>Numero: </label>
-                                 <input type="Number" name="numero" class="form-control numero" placeholder="" required="" autofocus=""> 
+                                 <input type="Number" name="numero" class="form-control numero" placeholder="" value="$dados['numero']" required="" autofocus=""> 
                               </div>
                            </td>
                         </tr>
                         <tr>
                            <td style="display: table; float:left; margin-right:10px">
                               <div> <label>Cep: </label>
-                                 <input type="text" name="cep" class="form-control cep" placeholder="Cep" required="" autofocus=""> 
+                                 <input type="text" name="cep" class="form-control cep" placeholder="Cep" value="$dados['cep']" required="" autofocus=""> 
                               </div>
                            </td>
                            <td colspan="4">
                               <div> <label>Bairro: </label>
-                                 <input type="text" name="bairro" class="form-control" placeholder="Bairro" required="" autofocus=""> 
+                                 <input type="text" name="bairro" class="form-control" placeholder="Bairro" value="$dados['bairro']" required="" autofocus=""> 
                               </div>
                            </td>
                         <tr>
                            <td style="display: table; float:left; margin-right:10px">
                               <div > <label>Cidade: </label>
-                                 <input type="text" name="cidade" class="form-control" placeholder="Cidade" required="" autofocus=""> 
+                                 <input type="text" name="cidade" class="form-control" placeholder="Cidade" value="$dados['cidade']" required="" autofocus=""> 
                               </div>
                            </td>
                            <td>
                               <div >
                                  <label>Estado: </label>
-                                 <select name="estado" class="form-control">
+                                 <select name="estado" value="$dados['estado']" class="form-control">
                                     <option value="select">Selecione</option>
                                     <option value="ac">Acre</option>
                                     <option value="al">Alagoas</option>
