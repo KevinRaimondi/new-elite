@@ -5,7 +5,7 @@
 	session_start();
 		  
 	if(isset($_SESSION["login"]) || isset($_SESSION["senha"])){
-		header('Location: /painel"');
+		header('Location: /painel');
 	}
 
 	if(isset($_GET['msg'])){
