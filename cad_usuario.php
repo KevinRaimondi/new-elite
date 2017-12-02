@@ -30,4 +30,10 @@
 			
 	$query = mysqli_query ($conn,"INSERT INTO `usuario` (`id`, `login`, `senha`, `email`, `nome`, `sobrenome`, `rg`, `cpf`, `nascimento`, `rua`, `numero`, `cep`, `bairro`, `cidade`, `estado`) VALUES (NULL, '$usuario', '$password', '$email', '$nome', '$sobrenome', '$rg', '$cpf', NULL, '$rua', '$numero', '$cep', '$bairro', '$cidade', '$estado')");
 	
+	if (mysqli_affected_rows() != 0 ){
+		header('Location: /login/index.php?msg=2"');
+	}else{
+		header('Location: /login/index.php?msg=3"');
+	}
+	
 ?>
