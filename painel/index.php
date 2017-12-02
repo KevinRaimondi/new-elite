@@ -1,5 +1,4 @@
 <?php 
-
 	require ("../conexao.php");
 	session_start();
 	if(!isset($_SESSION["login"]) || !isset($_SESSION["senha"])){
@@ -13,7 +12,8 @@
 	$dados = mysqli_fetch_assoc($query);
 	
 	function selected( $value, $selected ){
-    return $value==$selected ? ' selected="selected"' : '';
+		return $value==$selected ? ' selected="selected"' : '';
+	}
 	
 ?>
 
@@ -84,7 +84,7 @@
                            </td>
                            <td colspan="4">
                               <div > <label>Nascimento: </label>
-                                 <input type="Date" name="nascimento" class="form-control" placeholder="Nascimento"  value="<?php echo $dados['sobrenome'] ?>" autofocus=""> 
+                                 <input type="Date" name="nascimento" class="form-control" placeholder="Nascimento"  value="<?php echo $dados['nascimento'] ?>" autofocus=""> 
                               </div>
                            </td>
                         </tr>
@@ -124,7 +124,7 @@
                            <td>
                               <div >
                                  <label>Estado: </label>
-                                 <select name="estado" class="form-control">
+                                 <select name="estado" value="<?php echo $dados['estado'] ?>" class="form-control">
                                     <option value="select">Selecione</option>
                                     <option value="ac"<?php echo selected( 'ac', $dados['estado'] ); ?>>Acre</option>
                                     <option value="al"<?php echo selected( 'al', $dados['estado'] ); ?>>Alagoas</option>
