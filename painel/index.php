@@ -188,15 +188,15 @@
                         </tr>
                      </table>
                      </br>
-					<form method="post" action="excluir()">
-						<div class="btn-group" style="float: right;" >
-							<button type="submit" class="btn btn-secondary">EXCLUIR | CONTA</button>
-							<a href="../sair.php" class="btn btn-secondary"><b>SAIR</b></a>
-						</div>
-					</form>
                   </div>
             </div>
       </form>
+		<form method="post" action="excluir()">
+			<div class="btn-group" style="float: right;" >
+				<button type="submit" class="btn btn-secondary">EXCLUIR | CONTA</button>
+				<a href="../sair.php" class="btn btn-secondary"><b>SAIR</b></a>
+			</div>
+		</form>
       </div>
       <div class="py-5 border border-warning bg-secondary">
          <div class="container">
