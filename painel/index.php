@@ -124,7 +124,7 @@
                            <td>
                               <div >
                                  <label>Estado: </label>
-                                 <select readonly name="estado" value="<?php echo $dados['estado'] ?>" class="form-control">
+                                 <select disabled name="estado" value="<?php echo $dados['estado'] ?>" class="form-control">
                                     <option value="select">Selecione</option>
                                     <option value="ac"<?php echo selected( 'ac', $dados['estado'] ); ?>>Acre</option>
                                     <option value="al"<?php echo selected( 'al', $dados['estado'] ); ?>>Alagoas</option>
