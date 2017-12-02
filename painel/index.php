@@ -10,7 +10,6 @@
 	
 	$query = mysqli_query($conn,"SELECT * FROM `usuario` WHERE login='$login' AND senha='$senha'");
 	$dados = mysqli_fetch_assoc($query);
-	$id = $dados['id'];
 	
 	function selected( $value, $selected ){
 		return $value==$selected ? ' selected="selected"' : '';
@@ -29,19 +28,6 @@
 				</div>
 			<?php
 		}
-	}
-	
-	function excluir($id){
-	
-		$query = mysqli_query ($conn,"DELETE FROM `usuario` WHERE `usuario`.`id` = $id");
-	
-		if ($query){
-			header('Location: ../sair.php"');
-			header('Location: /index.php?msg=3"');
-		}else{
-			header('Location: /painel/index.php?msg=1"');
-		}
-		
 	}
 	
 ?>
@@ -81,7 +67,7 @@
          </div>
       </nav>
       <div class="py-5 opaque-overlay bg-dark text-dark" style="background-image: url(&quot;../imagens/a (1).png&quot;);">
-      <form class="" method="post" action="#" >
+      <form class="" method="post" action="../excluir.php" >
          <div class="container py-5">
             <div class="row">
                   <div class="col-md-8" style="margin-left: 20%;">
@@ -189,6 +175,7 @@
                      </table>
                      </br>
 					<div class="btn-group" style="float: right;" >
+					<input type="hidden" name="id" value="<?php echo $dados['id'] ?>" />
 						<button type="submit" class="btn btn-secondary">EXCLUIR | CONTA</button>
 						<a href="../sair.php" class="btn btn-secondary"><b>SAIR</b></a>
 					</div>
