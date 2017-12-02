@@ -54,16 +54,9 @@
 	require_once("../conexao.php");
 		
 	$query = mysqli_query ($conn,"INSERT INTO `usuario` (`id`, `login`, `senha`, `email`, `nome`, `sobrenome`, `rg`, `cpf`, `nascimento`, `rua`, `numero`, `cep`, `bairro`, `cidade`, `estado`) VALUES (NULL, '$usuario', '$password', '$email', '$nome', '$sobrenome', '$rg', '$cpf', NULL, '$rua', '$numero', '$cep', '$bairro', '$cidade', '$estado')");
-?>
 
-<!DOCTYPE html>
-<html lang="pt-br">
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	</head>
-	<body>
-	<?php
+	
+	
 		if (mysqli_affected_rows() != 0 )
 		{	
 		echo "
@@ -79,6 +72,5 @@
 				</script>
 			";		   
 		}
-	?> 
-	</body>
-</html>
+	
+?>
