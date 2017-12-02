@@ -126,7 +126,33 @@
                                  <label>Estado: </label>
                                  <select name="estado" class="form-control">
                                     <option value="select">Selecione</option>
-
+                                    <option value="ac"<?php echo selected( 'ac', $dados['estado'] ); ?>>Acre</option>
+                                    <option value="al"<?php echo selected( 'al', $dados['estado'] ); ?>>Alagoas</option>
+                                    <option value="am"<?php echo selected( 'am', $dados['estado'] ); ?>>Amazonas</option>
+                                    <option value="ap"<?php echo selected( 'ap', $dados['estado'] ); ?>>Amapá</option>
+                                    <option value="ba"<?php echo selected( 'ba', $dados['estado'] ); ?>>Bahia</option>
+                                    <option value="ce"<?php echo selected( 'ce', $dados['estado'] ); ?>>Ceará</option>
+                                    <option value="df"<?php echo selected( 'df', $dados['estado'] ); ?>>Distrito Federal</option>
+                                    <option value="es"<?php echo selected( 'es', $dados['estado'] ); ?>>Espírito Santo</option>
+                                    <option value="go"<?php echo selected( 'go', $dados['estado'] ); ?>>Goiás</option>
+                                    <option value="ma"<?php echo selected( 'ma', $dados['estado'] ); ?>>Maranhão</option>
+                                    <option value="mt"<?php echo selected( 'mt', $dados['estado'] ); ?>>Mato Grosso</option>
+                                    <option value="ms"<?php echo selected( 'ms', $dados['estado'] ); ?>>Mato Grosso do Sul</option>
+                                    <option value="mg"<?php echo selected( 'mg', $dados['estado'] ); ?>>Minas Gerais</option>
+                                    <option value="pa"<?php echo selected( 'pa', $dados['estado'] ); ?>>Pará</option>
+                                    <option value="pb"<?php echo selected( 'pb', $dados['estado'] ); ?>>Paraíba</option>
+                                    <option value="pr"<?php echo selected( 'pr', $dados['estado'] ); ?>>Paraná</option>
+                                    <option value="pe"<?php echo selected( 'pe', $dados['estado'] ); ?>>Pernambuco</option>
+                                    <option value="pi"<?php echo selected( 'pi', $dados['estado'] ); ?>>Piauí</option>
+                                    <option value="rj"<?php echo selected( 'rj', $dados['estado'] ); ?>>Rio de Janeiro</option>
+                                    <option value="rn"<?php echo selected( 'rn', $dados['estado'] ); ?>>Rio Grande do Norte</option>
+                                    <option value="ro"<?php echo selected( 'ro', $dados['estado'] ); ?>>Rondônia</option>
+                                    <option value="rs"<?php echo selected( 'rs', $dados['estado'] ); ?>>Rio Grande do Sul</option>
+                                    <option value="rr"<?php echo selected( 'rr', $dados['estado'] ); ?>>Roraima</option>
+                                    <option value="sc"<?php echo selected( 'sc', $dados['estado'] ); ?>>Santa Catarina</option>
+                                    <option value="se"<?php echo selected( 'se', $dados['estado'] ); ?>>Sergipe</option>
+                                    <option value="sp"<?php echo selected( 'sp', $dados['estado'] ); ?>>São Paulo</option>
+                                    <option value="to"<?php echo selected( 'to', $dados['estado'] ); ?>>Tocantins</option>
                                  </select>
                               </div>
                            </td>
