@@ -67,7 +67,7 @@
          </div>
       </nav>
       <div class="py-5 opaque-overlay bg-dark text-dark" style="background-image: url(&quot;../imagens/a (1).png&quot;);">
-      <form class="" method="post" action="#" >	  
+      <form class="" method="post" action="../atualizar.php" >
          <div class="container py-5">
             <div class="row">
                   <div class="col-md-8" style="margin-left: 20%;">
@@ -109,37 +109,37 @@
                         <tr>
                            <td colspan="3" >
                               <div> <label>Rua: </label>
-                                 <input readonly type="text" name="rua" class="form-control" placeholder="Rua"  value="<?php echo $dados['rua'] ?>" required="" autofocus=""> 
+                                 <input type="text" name="rua" class="form-control" placeholder="Rua"  value="<?php echo $dados['rua'] ?>" required="" autofocus=""> 
                               </div>
                            </td>
                            <td style="display: table; float:left; margin-right:10px"/>
                            <td>
                               <div > <label>Numero: </label>
-                                 <input readonly type="Number" name="numero" class="form-control numero" placeholder="" value="<?php echo $dados['numero'] ?>" required="" autofocus=""> 
+                                 <input type="Number" name="numero" class="form-control numero" placeholder="" value="<?php echo $dados['numero'] ?>" required="" autofocus=""> 
                               </div>
                            </td>
                         </tr>
                         <tr>
                            <td style="display: table; float:left; margin-right:10px">
                               <div> <label>Cep: </label>
-                                 <input readonly type="text" name="cep" class="form-control cep" placeholder="Cep" value="<?php echo $dados['cep'] ?>" required="" autofocus=""> 
+                                 <input type="text" name="cep" class="form-control cep" placeholder="Cep" value="<?php echo $dados['cep'] ?>" required="" autofocus=""> 
                               </div>
                            </td>
                            <td colspan="4">
                               <div> <label>Bairro: </label>
-                                 <input readonly type="text" name="bairro" class="form-control" placeholder="Bairro" value="<?php echo $dados['bairro'] ?>" required="" autofocus=""> 
+                                 <input type="text" name="bairro" class="form-control" placeholder="Bairro" value="<?php echo $dados['bairro'] ?>" required="" autofocus=""> 
                               </div>
                            </td>
                         <tr>
                            <td style="display: table; float:left; margin-right:10px">
                               <div > <label>Cidade: </label>
-                                 <input readonly type="text" name="cidade" class="form-control" placeholder="Cidade" value="<?php echo $dados['cidade'] ?>" required="" autofocus=""> 
+                                 <input type="text" name="cidade" class="form-control" placeholder="Cidade" value="<?php echo $dados['cidade'] ?>" required="" autofocus=""> 
                               </div>
                            </td>
                            <td>
                               <div >
                                  <label>Estado: </label>
-                                 <select disabled name="estado" value="<?php echo $dados['estado'] ?>" class="form-control">
+                                 <select name="estado" value="<?php echo $dados['estado'] ?>" class="form-control">
                                     <option value="select">Selecione</option>
                                     <option value="ac"<?php echo selected( 'ac', $dados['estado'] ); ?>>Acre</option>
                                     <option value="al"<?php echo selected( 'al', $dados['estado'] ); ?>>Alagoas</option>
@@ -174,16 +174,17 @@
                         </tr>
                      </table>
                      </br>
-                  </div>
+					<input type="hidden" name="id" value="<?php echo $dados['id'] ?>" />
+					<div class="btn-group" style="float: left;" >
+						<button type="submit" name="acao" value="excluir" class="btn btn-secondary">EXCLUIR | CONTA</button>
+					</div>
+					<div class="btn-group" style="float: right;" >
+						<button type="submit" name="acao" value="alterar" class="btn btn-secondary">ALTERAR</button>
+						<a href="../sair.php" class="btn btn-secondary"><b>SAIR</b></a>
+					</div>
+				</div>
             </div>
       </form>
-	  <form class="col-md-8" method="post" action="../excluir.php" >
-		<input type="hidden" name="id" value="<?php echo $dados['id'] ?>" />
-		<div class="btn-group" style="float: right;" >
-			<button type="submit" class="btn btn-secondary">EXCLUIR | CONTA</button>
-			<a href="../sair.php" class="btn btn-secondary"><b>SAIR</b></a>
-		</div>
-	 </form>
       </div>
       <div class="py-5 border border-warning bg-secondary">
          <div class="container">
