@@ -35,7 +35,7 @@
   <link rel="stylesheet" href="/css/style.css" type="text/css">
 
 <body>
-  <nav class="navbar navbar-expand-md navbar-dark nav-bar-menu" style="background-image: url(&quot;imagens/a (7).png&quot;);">
+  <nav class="navbar navbar-expand-md navbar-dark nav-bar-menu">
     <div class="container">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
       <a class="navbar-brand" href="/"><b class="text-uppercase gradient-overlay">NEW-ELITE<br></b></a>
