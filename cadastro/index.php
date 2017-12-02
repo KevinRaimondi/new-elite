@@ -34,6 +34,9 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
       <link rel="stylesheet" href="../css/style.css" type="text/css">
+	  <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+	  <script type="text/javascript" src="../js/jquery.mask.min.js"></script>
+	  <script type="text/javascript" src="../js/mask.js"></script>
       <title> Cadastro </title>
       <meta name="description" content="Aprenda a criar um site completo que usa formulários em HTML">
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -103,12 +106,12 @@
                         <tr>
                            <td  style="display: table; float:left; margin-right:10px">
                               <div > <label>RG: </label>
-                                 <input type="text" name="rg" class="form-control" placeholder="RG" required="" autofocus=""> 
+                                 <input type="text" name="rg" class="form-control rg" placeholder="RG" required="" autofocus=""> 
                               </div>
                            </td>
                            <td style="display: table; float:left; margin-right:10px" >
                               <div > <label>CPF: </label>
-                                 <input type="text" name="cpf" class="form-control" placeholder="CPF" required="" autofocus=""> 
+                                 <input type="text" name="cpf" class="form-control cpf" placeholder="CPF" required="" autofocus=""> 
                               </div>
                            </td>
                            <td colspan="4">
@@ -129,14 +132,14 @@
                            <td style="display: table; float:left; margin-right:10px"/>
                            <td>
                               <div > <label>Numero: </label>
-                                 <input type="Number" name="numero" class="form-control" placeholder="" required="" autofocus=""> 
+                                 <input type="Number" name="numero" class="form-control numero" placeholder="" required="" autofocus=""> 
                               </div>
                            </td>
                         </tr>
                         <tr>
                            <td style="display: table; float:left; margin-right:10px">
                               <div> <label>Cep: </label>
-                                 <input type="text" name="cep" class="form-control" placeholder="Cep" required="" autofocus=""> 
+                                 <input type="text" name="cep" class="form-control cep" placeholder="Cep" required="" autofocus=""> 
                               </div>
                            </td>
                            <td colspan="4">
