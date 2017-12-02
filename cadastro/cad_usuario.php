@@ -1,29 +1,4 @@
 ﻿<?php 
-	if(isset($_GET['msg'])){
-		$msg = $_GET['msg'];
-		switch($msg){
-			case 1:
-			?>
-				<div class="message">
-					<div class="alert alert-danger">
-						<a href="/cadastro" class="close" data-dismiss="alert">&times</a>
-						Senhas não combinam.
-					</div>
-				</div>
-			<?php
-			break;
-			case 2:
-			?>
-				<div class="message">
-					<div class="alert alert-danger">
-						<a href="/cadastro" class="close" data-dismiss="alert">&times</a>
-						Favor selecionar um estado.
-					</div>
-				</div>
-			<?php
-			break;
-		}
-	}
 
 	this=> $email 				= $_POST["email"];
 	this=> $usuario				= $_POST["usuario"];
@@ -51,7 +26,7 @@
 		header('Location: /cadastro/index.php?msg=2"');
 	}
 	
-	require_once("/conexao.php");
+	require("/conexao.php");
 		
 	$query = mysqli_query ($conn,"INSERT INTO `usuario` (`id`, `login`, `senha`, `email`, `nome`, `sobrenome`, `rg`, `cpf`, `nascimento`, `rua`, `numero`, `cep`, `bairro`, `cidade`, `estado`) VALUES (NULL, '$usuario', '$password', '$email', '$nome', '$sobrenome', '$rg', '$cpf', NULL, '$rua', '$numero', '$cep', '$bairro', '$cidade', '$estado')");
 
