@@ -67,7 +67,7 @@
          </div>
       </nav>
       <div class="py-5 opaque-overlay bg-dark text-dark" style="background-image: url(&quot;../imagens/a (1).png&quot;);">
-      <form class="" method="post" action="../excluir.php" >
+      <form class="" method="post" action="#" >	  
          <div class="container py-5">
             <div class="row">
                   <div class="col-md-8" style="margin-left: 20%;">
@@ -174,14 +174,16 @@
                         </tr>
                      </table>
                      </br>
-					<div class="btn-group" style="float: right;" >
-					<input type="hidden" name="id" value="<?php echo $dados['id'] ?>" />
-						<button type="submit" class="btn btn-secondary">EXCLUIR | CONTA</button>
-						<a href="../sair.php" class="btn btn-secondary"><b>SAIR</b></a>
-					</div>
                   </div>
             </div>
       </form>
+	  <form class="" method="post" action="../excluir.php" >
+		<input type="hidden" name="id" value="<?php echo $dados['id'] ?>" />
+		<div class="btn-group" style="float: right;" >
+			<button type="submit" class="btn btn-secondary">EXCLUIR | CONTA</button>
+			<a href="../sair.php" class="btn btn-secondary"><b>SAIR</b></a>
+		</div>
+	 </form>
       </div>
       <div class="py-5 border border-warning bg-secondary">
          <div class="container">
