@@ -45,23 +45,6 @@
       <form class="" method="post" action="../cad_usuario.php" >
          <div class="container py-5">
             <div class="row">
-               <div class="col-md-4">
-                  <div class="col-md-12">
-                     <h1 class="text-gray-dark">Dados de login </h1>
-                     <div> <label>E-mail: </label>
-                        <input type="email" name="email" class="form-control" placeholder="E-mail" required="" autofocus=""> 
-                     </div>
-                     <div> <label>Usuário</label>
-                        <input type="usuario" name="usuario" class="form-control" placeholder="Usuário" required="" autofocus=""> 
-                     </div>
-                     <div> <label>Senha</label>
-                        <input type="password" name="password" class="form-control" placeholder="Senha" required=""> 
-                     </div>
-                     <div> <label>Confirmar Senha</label>
-                        <input type="password" name="passwordConfirm" class="form-control" placeholder="Confirmar senha" required=""> 
-                     </div>
-                  </div>
-               </div>
                <div class="col-md-8">
                   <div class="col-md-13">
                      <h1 class="text-gray-dark">Dados Pessoais</h1>
