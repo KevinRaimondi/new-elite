@@ -12,6 +12,27 @@
 	$query = mysqli_query($conn,"SELECT * FROM `usuario` WHERE login='$login' AND senha='$senha'");
 	$dados = mysqli_fetch_assoc($query);
 	
+	function selected( $value, $selected ){
+    return $value==$selected ? ' selected="selected"' : '';
+	
+	function mask($val, $mask){
+		$maskared = '';
+		$k = 0;
+		for($i = 0; $i<=strlen($mask)-1; $i++){
+			if($mask[$i] == '#'){
+				if(isset($val[$k])){
+					$maskared .= $val[$k++];
+				}
+			}else{
+				if(isset($mask[$i])){
+					$maskared .= $mask[$i];
+				}
+			}
+		}
+			return $maskared;
+		}
+	}
+	
 ?>
 
 <!DOCTYPE html>
@@ -71,12 +92,12 @@
                         <tr>
                            <td  style="display: table; float:left; margin-right:10px">
                               <div > <label>RG: </label>
-                                 <input type="text" name="rg" class="form-control rg" placeholder="RG" value="<?php echo $dados['email'] ?>" required="" autofocus=""> 
+                                 <input type="text" name="rg" class="form-control rg" placeholder="RG" value="<?php echo mask($dados['rg'],'##.###.###-#'); ?>" required="" autofocus=""> 
                               </div>
                            </td>
                            <td style="display: table; float:left; margin-right:10px" >
                               <div > <label>CPF: </label>
-                                 <input type="text" name="cpf" class="form-control cpf" placeholder="CPF" value="<?php echo $dados['nome'] ?>" required="" autofocus=""> 
+                                 <input type="text" name="cpf" class="form-control cpf" placeholder="CPF" value="<?php echo mask($dados['cpf'],'####.###.###-##'); ?>" required="" autofocus=""> 
                               </div>
                            </td>
                            <td colspan="4">
@@ -104,7 +125,7 @@
                         <tr>
                            <td style="display: table; float:left; margin-right:10px">
                               <div> <label>Cep: </label>
-                                 <input type="text" name="cep" class="form-control cep" placeholder="Cep" value="<?php echo $dados['cep'] ?>" required="" autofocus=""> 
+                                 <input type="text" name="cep" class="form-control cep" placeholder="Cep" value="<?php echo mask($dados['cep'],'#####-###'); ?>" required="" autofocus=""> 
                               </div>
                            </td>
                            <td colspan="4">
@@ -121,35 +142,35 @@
                            <td>
                               <div >
                                  <label>Estado: </label>
-                                 <select name="estado" value="<?php echo $dados['estado'] ?>" class="form-control">
+                                 <select name="estado" class="form-control">
                                     <option value="select">Selecione</option>
-                                    <option value="ac">Acre</option>
-                                    <option value="al">Alagoas</option>
-                                    <option value="am">Amazonas</option>
-                                    <option value="ap">Amapá</option>
-                                    <option value="ba">Bahia</option>
-                                    <option value="ce">Ceará</option>
-                                    <option value="df">Distrito Federal</option>
-                                    <option value="es">Espírito Santo</option>
-                                    <option value="go">Goiás</option>
-                                    <option value="ma">Maranhão</option>
-                                    <option value="mt">Mato Grosso</option>
-                                    <option value="ms">Mato Grosso do Sul</option>
-                                    <option value="mg">Minas Gerais</option>
-                                    <option value="pa">Pará</option>
-                                    <option value="pb">Paraíba</option>
-                                    <option value="pr">Paraná</option>
-                                    <option value="pe">Pernambuco</option>
-                                    <option value="pi">Piauí</option>
-                                    <option value="rj">Rio de Janeiro</option>
-                                    <option value="rn">Rio Grande do Norte</option>
-                                    <option value="ro">Rondônia</option>
-                                    <option value="rs">Rio Grande do Sul</option>
-                                    <option value="rr">Roraima</option>
-                                    <option value="sc">Santa Catarina</option>
-                                    <option value="se">Sergipe</option>
-                                    <option value="sp">São Paulo</option>
-                                    <option value="to">Tocantins</option>
+                                    <option value="ac"<?php echo selected( 'ac', $dados['estado'] ); ?>>Acre</option>
+                                    <option value="al"<?php echo selected( 'al', $dados['estado'] ); ?>>Alagoas</option>
+                                    <option value="am"<?php echo selected( 'am', $dados['estado'] ); ?>>Amazonas</option>
+                                    <option value="ap"<?php echo selected( 'ap', $dados['estado'] ); ?>>Amapá</option>
+                                    <option value="ba"<?php echo selected( 'ba', $dados['estado'] ); ?>>Bahia</option>
+                                    <option value="ce"<?php echo selected( 'ce', $dados['estado'] ); ?>>Ceará</option>
+                                    <option value="df"<?php echo selected( 'df', $dados['estado'] ); ?>>Distrito Federal</option>
+                                    <option value="es"<?php echo selected( 'es', $dados['estado'] ); ?>>Espírito Santo</option>
+                                    <option value="go"<?php echo selected( 'go', $dados['estado'] ); ?>>Goiás</option>
+                                    <option value="ma"<?php echo selected( 'ma', $dados['estado'] ); ?>>Maranhão</option>
+                                    <option value="mt"<?php echo selected( 'mt', $dados['estado'] ); ?>>Mato Grosso</option>
+                                    <option value="ms"<?php echo selected( 'ms', $dados['estado'] ); ?>>Mato Grosso do Sul</option>
+                                    <option value="mg"<?php echo selected( 'mg', $dados['estado'] ); ?>>Minas Gerais</option>
+                                    <option value="pa"<?php echo selected( 'pa', $dados['estado'] ); ?>>Pará</option>
+                                    <option value="pb"<?php echo selected( 'pb', $dados['estado'] ); ?>>Paraíba</option>
+                                    <option value="pr"<?php echo selected( 'pr', $dados['estado'] ); ?>>Paraná</option>
+                                    <option value="pe"<?php echo selected( 'pe', $dados['estado'] ); ?>>Pernambuco</option>
+                                    <option value="pi"<?php echo selected( 'pi', $dados['estado'] ); ?>>Piauí</option>
+                                    <option value="rj"<?php echo selected( 'rj', $dados['estado'] ); ?>>Rio de Janeiro</option>
+                                    <option value="rn"<?php echo selected( 'rn', $dados['estado'] ); ?>>Rio Grande do Norte</option>
+                                    <option value="ro"<?php echo selected( 'ro', $dados['estado'] ); ?>>Rondônia</option>
+                                    <option value="rs"<?php echo selected( 'rs', $dados['estado'] ); ?>>Rio Grande do Sul</option>
+                                    <option value="rr"<?php echo selected( 'rr', $dados['estado'] ); ?>>Roraima</option>
+                                    <option value="sc"<?php echo selected( 'sc', $dados['estado'] ); ?>>Santa Catarina</option>
+                                    <option value="se"<?php echo selected( 'se', $dados['estado'] ); ?>>Sergipe</option>
+                                    <option value="sp"<?php echo selected( 'sp', $dados['estado'] ); ?>>São Paulo</option>
+                                    <option value="to"<?php echo selected( 'to', $dados['estado'] ); ?>>Tocantins</option>
                                  </select>
                               </div>
                            </td>
