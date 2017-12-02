@@ -22,11 +22,32 @@
 			?>
 				<div class="message">
 					<div class="alert alert-danger">
-						<a href="/" class="close" data-dismiss="alert">&times</a>
+						<a href="/painel" class="close" data-dismiss="alert">&times</a>
 						Não foi possivel excluir sua conta, por favor entre em contato.
 					</div>
 				</div>
 			<?php
+			break;
+			case 2:
+			?>
+				<div class="message">
+					<div class="alert alert-success">
+						<a href="/painel" class="close" data-dismiss="alert">&times</a>
+						Conta atualizada com sucesso.
+					</div>
+				</div>
+			<?php
+			break;
+			case 3:
+			?>
+				<div class="message">
+					<div class="alert alert-danger">
+						<a href="/painel" class="close" data-dismiss="alert">&times</a>
+						Houve uma falha ao atualizada sua conta.
+					</div>
+				</div>
+			<?php
+			break;
 		}
 	}
 	

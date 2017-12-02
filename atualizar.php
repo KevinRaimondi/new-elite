@@ -18,9 +18,9 @@
 			if ($query){
 				session_start();
 				session_destroy();
-				header('Location: /index.php?msg=3"');
+				header('Location: /painel/index.php?msg=2"');
 			}else{
-				header('Location: /painel/index.php?msg=1"');
+				header('Location: /painel/index.php?msg=3"');
 			}
 		}	
 		
