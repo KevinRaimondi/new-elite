@@ -9,8 +9,8 @@
 	$login = $_SESSION["login"];
 	$senha = $_SESSION["senha"];
 	
-	$query = mysqli_query($conn,"SELECT id, login, senha, email, nome, sobrenome, rg, cpf, nascimento, rua, numero, cep, bairro, cidade, estado FROM `usuario` WHERE login='$login' AND senha='$senha'");
-	$dados = mysqli_num_rows($query);
+	$query = mysqli_query($conn,"SELECT * FROM `usuario` WHERE login='$login' AND senha='$senha'");
+	$dados = mysqli_fetch_assoc($query);
 	
 ?>
 
