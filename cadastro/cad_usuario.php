@@ -12,6 +12,16 @@
 				</div>
 			<?php
 			break;
+			case 2:
+			?>
+				<div class="message">
+					<div class="alert alert-danger">
+						<a href="/cadastro" class="close" data-dismiss="alert">&times</a>
+						Favor selecionar um estado.
+					</div>
+				</div>
+			<?php
+			break;
 		}
 	}
 
@@ -35,6 +45,10 @@
 		
 	if(password != passwordConfirm){
 		header('Location: /cadastro/index.php?msg=1"');
+	}
+	
+	if(estado == "select"){
+		header('Location: /cadastro/index.php?msg=2"');
 	}
 	
 	require_once("../conexao.php");
