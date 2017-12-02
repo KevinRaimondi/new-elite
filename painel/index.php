@@ -201,7 +201,7 @@
 					</div>
 					<div class="btn-group" style="float: right;" >
 						<button type="submit" name="acao" value="alterar" class="btn btn-secondary">ALTERAR</button>
-						<a href="../sair.php" class="btn btn-secondary"><b>SAIR</b></a>
+						<button type="submit" name="acao" value="sair" class="btn btn-secondary">SAIR</button>
 					</div>
 				</div>
             </div>

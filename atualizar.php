@@ -16,8 +16,6 @@
 			$query = mysqli_query ($conn,"UPDATE `usuario` SET `rua` = '$rua', `numero` = '$numero', `cep` = '$cep', `bairro` = '$bairro', `cidade` = '$cidade', `estado` = '$estado' WHERE `usuario`.`id` = $id");
 	
 			if ($query){
-				session_start();
-				session_destroy();
 				header('Location: /painel/index.php?msg=2"');
 			}else{
 				header('Location: /painel/index.php?msg=3"');
@@ -35,4 +33,9 @@
 				header('Location: /painel/index.php?msg=1"');
 			}
 		}
+		
+		if($acao == "sair"){
+			header('Location: sair.php"');
+		}
+		
 ?>
