@@ -191,7 +191,7 @@
                      <div class="btn-group" style="float: right;" >
                         <button type="submit" class="btn btn-secondary">ENVIAR</button>
                         <button type="reset" class="btn btn-secondary">LIMPAR</button>
-                        <a href="/" class="btn btn-secondary"><b>SAIR</b></a>
+                        <a href="/index.php?msg=2" class="btn btn-secondary"><b>SAIR</b></a>
                      </div>
                   </div>
                </div>
