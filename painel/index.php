@@ -27,7 +27,7 @@
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
             <a class="navbar-brand" href="/"><b class="text-uppercase gradient-overlay">NEW-ELITE<br></b></a>
             <div class="collapse navbar-collapse mx-auto" id="navbarSupportedContent">
-               <ul class="navbar-nav mr-auto">
+               <ul class="navbar-nav mr-auto menu">
                   <li class="nav-item" id="p-5 gradient-overlay bg-dark">
                      <a class="nav-link" href="/planos"><b class="text-light">PLANOS</b></a>
                   </li>

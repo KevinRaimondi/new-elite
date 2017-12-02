@@ -4,6 +4,12 @@
 * Copyright 2011-2017 Twitter, Inc.
 * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
 */
+
+.menu{
+	position: absolute;
+	right: 17%;
+}
+
 .alert {
   padding: 0.75rem 1.25rem;
   /*margin-bottom: 1rem;*/
