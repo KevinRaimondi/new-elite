@@ -57,20 +57,6 @@
 
 	
 	
-		if (mysqli_affected_rows() != 0 )
-		{	
-		echo "
-				<script type=\"text/javascript\">
-					alert(\"Usuário cadastrado com Sucesso.\");
-				</script>
-			";		   
-		}
-		else{ 	
-				echo "
-				<script type=\"text/javascript\">
-					alert(\"Usuário não foi cadastrado com Sucesso.\");
-				</script>
-			";		   
-		}
+
 	
 ?>
