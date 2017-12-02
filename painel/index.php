@@ -45,8 +45,7 @@
       <form class="" method="post" action="../cad_usuario.php" >
          <div class="container py-5">
             <div class="row">
-               <div class="col-md-8">
-                  <div class="col-md-13">
+                  <div class="col-md-13" style="margin-left: 20%;">
                      <h1 class="text-gray-dark">Dados Pessoais</h1>
                      <table style="margin-bottom: 12%;">
                         <tr>
@@ -156,7 +155,6 @@
                         <a href="/index.php?msg=2" class="btn btn-secondary"><b>SAIR</b></a>
                      </div>
                   </div>
-               </div>
             </div>
       </form>
       </div>
