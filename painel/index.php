@@ -6,7 +6,10 @@
 		header ("Location: /index.php?msg=1");
 	}
 	
-	$query = mysqli_query($conn,"SELECT id, login, senha, email, nome, sobrenome, rg, cpf, nascimento, rua, numero, cep, bairro, cidade, estado FROM `usuario` WHERE login='$_SESSION["login"]' AND senha='$_SESSION["senha"]'");
+	$login = $_SESSION["login"];
+	$senha = $_SESSION["senha"];
+	
+	$query = mysqli_query($conn,"SELECT id, login, senha, email, nome, sobrenome, rg, cpf, nascimento, rua, numero, cep, bairro, cidade, estado FROM `usuario` WHERE login='$login' AND senha='$senha'");
 	$dados = mysql_fetch_array($query)
 	
 ?>
