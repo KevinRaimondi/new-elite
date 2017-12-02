@@ -1,10 +1,7 @@
 ﻿<?php 
-               
-	require ("conexao.php");
-	
+
+	session_start();
 	session_destroy();
-	unset( $_SESSION );
-	
-	header('Location: /login/index.php?msg=2"');
+	header('Location: /index.php?msg=2"');
 	
 ?>
