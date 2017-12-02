@@ -10,6 +10,7 @@
 	
 	$query = mysqli_query($conn,"SELECT * FROM `usuario` WHERE login='$login' AND senha='$senha'");
 	$dados = mysqli_fetch_assoc($query);
+	$id = $dados['id'];
 	
 	function selected( $value, $selected ){
 		return $value==$selected ? ' selected="selected"' : '';
@@ -30,9 +31,8 @@
 		}
 	}
 	
-	function excluir(){
-		$id = $dados['id'];
-		
+	function excluir($id){
+	
 		$query = mysqli_query ($conn,"DELETE FROM `usuario` WHERE `usuario`.`id` = $id");
 	
 		if ($query){
@@ -81,7 +81,7 @@
          </div>
       </nav>
       <div class="py-5 opaque-overlay bg-dark text-dark" style="background-image: url(&quot;../imagens/a (1).png&quot;);">
-      <form class="" method="post" action="excluir()" >
+      <form class="" method="post" action="#" >
          <div class="container py-5">
             <div class="row">
                   <div class="col-md-8" style="margin-left: 20%;">
