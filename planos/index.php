@@ -87,7 +87,7 @@
             </div>
             <div class="card-block">
               <a href="https://www.startminer.com/1492574" target="_blank"> </a>
-              <a href="/login" class="btn btn-info"><b>TESTAR</b></a>
+              <a href="/login" class="btn btn-secondary"><b>TESTAR</b></a>
             </div>
           </div>
         </div>
@@ -109,7 +109,7 @@
               <p><b>Armazenamento em nuvem&nbsp;</b></p>
             </div>
             <div class="card-block">
-              <a href="imagens/em_construcao1.jpg" class="btn btn-info"><b>COMPRAR</b></a>
+              <a href="imagens/em_construcao1.jpg" class="btn btn-secondary"><b>COMPRAR</b></a>
             </div>
           </div>
         </div>
@@ -131,7 +131,7 @@
               <p><b>Armazenamento em nuvem&nbsp;</b></p>
             </div>
             <div class="card-block">
-              <a href="imagens/em_construcao1.jpg" class="btn btn-info"><b>COMPRAR</b></a>
+              <a href="imagens/em_construcao1.jpg" class="btn btn-secondary"><b>COMPRAR</b></a>
             </div>
           </div>
         </div>
@@ -153,7 +153,7 @@
               <p><b>Armazenamento em nuvem&nbsp;</b></p>
             </div>
             <div class="card-block">
-              <a href="imagens/em_construcao1.jpg" class="btn btn-info"><b>COMPRAR</b></a>
+              <a href="imagens/em_construcao1.jpg" class="btn btn-secondary"><b>COMPRAR</b></a>
             </div>
           </div>
         </div>
