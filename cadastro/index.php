@@ -87,6 +87,16 @@
 				</div>
 			<?php
 			break;
+			case 5:
+			?>
+				<div class="message">
+					<div class="alert alert-danger">
+						<a href="/cadastro" class="close" data-dismiss="alert">&times</a>
+						Já existe um e-mail cadastrado.
+					</div>
+				</div>
+			<?php
+			break;
 		}
 	}
 		
