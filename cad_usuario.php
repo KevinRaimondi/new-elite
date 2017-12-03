@@ -66,7 +66,7 @@
 		header('Location: /cadastro/index.php?msg=2"');
 	}
 	
-	if(empty($nascimento)){
+	if(empty($nascimento) || $nascimento == "" || $nascimento == "NULL"){
 		
 		session_start();
 	
