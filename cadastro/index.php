@@ -158,30 +158,30 @@
                         <tr>
                            <td colspan="3">
                               <div> <label>Nome: </label>
-                                 <input readonly type="text" name="nome" class="form-control" placeholder="Nome" value="<?php echo $nome ?>" required="" autofocus=""> 
+                                 <input type="text" name="nome" class="form-control" placeholder="Nome" value="<?php echo $nome ?>" required="" autofocus=""> 
                               </div>
                            </td>
                            <td style="display: table; float:left; margin-right:10px"/>
                            <td>
                               <div > <label>Sobrenome: </label>
-                                 <input readonly type="text" name="sobrenome" class="form-control" placeholder="Sobrenome" value="<?php echo $sobrenome ?>" required="" autofocus=""> 
+                                 <input type="text" name="sobrenome" class="form-control" placeholder="Sobrenome" value="<?php echo $sobrenome ?>" required="" autofocus=""> 
                               </div>
                            </td>
                         </tr>
                         <tr>
                            <td  style="display: table; float:left; margin-right:10px">
                               <div > <label>RG: </label>
-                                 <input readonly type="text" name="rg" class="form-control rg" placeholder="RG" value="<?php echo $rg ?>" required="" autofocus=""> 
+                                 <input type="text" name="rg" class="form-control rg" placeholder="RG" value="<?php echo $rg ?>" required="" autofocus=""> 
                               </div>
                            </td>
                            <td style="display: table; float:left; margin-right:10px" >
                               <div > <label>CPF: </label>
-                                 <input readonly type="text" name="cpf" class="form-control cpf" placeholder="CPF" value="<?php echo $cpf ?>" required="" autofocus=""> 
+                                 <input type="text" name="cpf" class="form-control cpf" placeholder="CPF" value="<?php echo $cpf ?>" required="" autofocus=""> 
                               </div>
                            </td>
                            <td colspan="4">
                               <div > <label>Nascimento: </label>
-                                 <input readonly type="Date" name="nascimento" class="form-control" placeholder="Nascimento"  value="<?php echo $nascimento ?>" autofocus=""> 
+                                 <input type="Date" name="nascimento" class="form-control" placeholder="Nascimento"  value="<?php echo $nascimento ?>" autofocus=""> 
                               </div>
                            </td>
                         </tr>
