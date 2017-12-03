@@ -61,7 +61,7 @@ function displaylayer(nameDiv,personal){
     <meta name="description" content="O NELITEAPP foi criado para você que quer ter total controle aonde você estiver. com ele você acessa seu aplicativo de uma forma fácil e segura, sem utiliziar computadores e notebooks, você abre seu estoque na palma de sua mão.">
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <body>
-    <div id="promo" style="position:absolute; left:314px; top:290px; z-index:2">
+    <div id="promo" style="position:absolute; left:314px; top:290px; z-index:1000">
   <table border="0" cellpadding="0" cellspacing="0">
 
     <tr>
