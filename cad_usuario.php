@@ -66,7 +66,7 @@
 		header('Location: /cadastro/index.php?msg=2"');
 	}
 	
-	if($nascimento == "0000-00-00"){
+	if($nascimento == ""){
 		
 		session_start();
 	
@@ -84,7 +84,7 @@
 		$_SESSION['cidade'] = $cidade;
 		$_SESSION['estado'] = $estado;
 		
-		header('Location: /cadastro/index.php?msg=2"');
+		header('Location: /cadastro/index.php?msg=6"');
 	}
 
 	$verificarExistenciaLogin = mysqli_query($conn,"SELECT * FROM usuario WHERE login = '$usuario'");
