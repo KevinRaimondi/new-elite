@@ -1,6 +1,9 @@
 ﻿<?php 
 
 	require("conexao.php");
+	
+	session_start();
+	session_destroy();
                                        
 	$email 			   = $_POST['email'];               
 	$usuario		   = $_POST['usuario'];             
@@ -20,6 +23,7 @@
 	$cidade  		   = $_POST['cidade'];              
 	$estado  		   = $_POST['estado'];  
 
+
 	if($password != $passwordConfirm){
 		header('Location: /cadastro/index.php?msg=1"');
 	}
@@ -31,6 +35,25 @@
 	$verificarExistencia = mysqli_query($conn,"SELECT login, senha  FROM usuario WHERE login = '$usuario'");
 	$row = mysqli_num_rows($verificarExistencia);
 	if ($row > 0){
+			
+		session_start();
+	
+		$_SESSION['email'] = $email;
+		$_SESSION['usuario'] = $usuario;
+		$_SESSION['password'] = $password;
+		$_SESSION['passwordConfirm'] = $passwordConfirm;
+		$_SESSION['nome'] = $nome;
+		$_SESSION['sobrenome'] = $sobrenome;
+		$_SESSION['rg'] = $rg;
+		$_SESSION['cpf'] = $cpf;
+		$_SESSION['nascimento'] = $nascimento;
+		$_SESSION['rua'] = $rua;
+		$_SESSION['numero'] = $numero;
+		$_SESSION['cep'] = $cep;
+		$_SESSION['bairro'] = $bairro;
+		$_SESSION['cidade'] = $cidade;
+		$_SESSION['estado'] = $estado;
+		
 		header('Location: /cadastro/index.php?msg=4');
 	}else{
 		$query = mysqli_query ($conn,"INSERT INTO `usuario` (`id`, `login`, `senha`, `email`, `nome`, `sobrenome`, `rg`, `cpf`, `nascimento`, `rua`, `numero`, `cep`, `bairro`, `cidade`, `estado`) VALUES (NULL, '$usuario', '$password', '$email', '$nome', '$sobrenome', '$rg', '$cpf', $nascimento, '$rua', '$numero', '$cep', '$bairro', '$cidade', '$estado')");
