@@ -27,13 +27,21 @@
 	if($estado == "select"){
 		header('Location: /cadastro/index.php?msg=2"');
 	}
-			
-	$query = mysqli_query ($conn,"INSERT INTO `usuario` (`id`, `login`, `senha`, `email`, `nome`, `sobrenome`, `rg`, `cpf`, `nascimento`, `rua`, `numero`, `cep`, `bairro`, `cidade`, `estado`) VALUES (NULL, '$usuario', '$password', '$email', '$nome', '$sobrenome', '$rg', '$cpf', $nascimento, '$rua', '$numero', '$cep', '$bairro', '$cidade', '$estado')");
-	
-	if ($query){
-		header('Location: /login/index.php?msg=2"');
+
+	$verificarExistencia = mysqli_query($conn,"SELECT login, senha  FROM usuario WHERE login = '$usuario'");
+	$row = mysqli_num_rows($verificarExistencia);
+	if ($row > 0){
+		header('Location: /cadastro/index.php?msg=4');
 	}else{
-		header('Location: /login/index.php?msg=3"');
+		$query = mysqli_query ($conn,"INSERT INTO `usuario` (`id`, `login`, `senha`, `email`, `nome`, `sobrenome`, `rg`, `cpf`, `nascimento`, `rua`, `numero`, `cep`, `bairro`, `cidade`, `estado`) VALUES (NULL, '$usuario', '$password', '$email', '$nome', '$sobrenome', '$rg', '$cpf', $nascimento, '$rua', '$numero', '$cep', '$bairro', '$cidade', '$estado')");
+	
+		if ($query){
+			header('Location: /login/index.php?msg=2"');
+		}else{
+			header('Location: /cadastro/index.php?msg=3"');
+		}
 	}
+	
+
 		
 ?>

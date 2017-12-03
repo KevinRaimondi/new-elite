@@ -23,6 +23,26 @@
 				</div>
 			<?php
 			break;
+			case 3:
+			?>
+				<div class="message">
+					<div class="alert alert-danger">
+						<a href="/cadastro" class="close" data-dismiss="alert">&times</a>
+						Usuário não foi cadastrado com sucesso.
+					</div>
+				</div>
+			<?php
+			break;
+			case 4:
+			?>
+				<div class="message">
+					<div class="alert alert-danger">
+						<a href="/cadastro" class="close" data-dismiss="alert">&times</a>
+						Já existe um usuario cadastrado.
+					</div>
+				</div>
+			<?php
+			break;
 		}
 	}
 	
