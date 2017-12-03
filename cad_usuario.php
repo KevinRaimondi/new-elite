@@ -11,7 +11,9 @@
 	$rg				   = $_POST['rg'];                  
 	$cpf			   = $_POST['cpf'];                 
 														
-	$nascimento  	   = $_POST['nascimento'];          
+	$nascimento  	   = $_POST['nascimento'];      
+
+echo $nascimento;    
 														
 	$rua  			   = $_POST['rua'];                 
 	$numero  		   = $_POST['numero'];              
@@ -21,6 +23,8 @@
 	$estado  		   = $_POST['estado'];  
 
 	$dataformatada = date('Y-m-d', strtotime($nascimento));
+	
+	echo $dataformatada;
 
 	if($password != $passwordConfirm){
 		header('Location: /cadastro/index.php?msg=1"');
