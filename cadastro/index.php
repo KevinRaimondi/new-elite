@@ -92,16 +92,16 @@
                   <div class="col-md-12">
                      <h1 class="text-gray-dark">Dados de login </h1>
                      <div> <label>E-mail: </label>
-                        <input type="email" name="email" class="form-control" placeholder="E-mail" required="" autofocus=""> 
+                        <input type="email" name="email" class="form-control" placeholder="E-mail" value="<?php echo $_SESSION['email'] ?>" required="" autofocus=""> 
                      </div>
                      <div> <label>Usuário</label>
-                        <input type="usuario" name="usuario" class="form-control" placeholder="Usuário" required="" autofocus=""> 
+                        <input type="usuario" name="usuario" class="form-control" placeholder="Usuário" value="<?php echo $_SESSION['usuario'] ?>" required="" autofocus=""> 
                      </div>
                      <div> <label>Senha</label>
-                        <input type="password" name="password" class="form-control" placeholder="Senha" required=""> 
+                        <input type="password" name="password" class="form-control" placeholder="Senha" value="<?php echo $_SESSION['password'] ?>" required=""> 
                      </div>
                      <div> <label>Confirmar Senha</label>
-                        <input type="password" name="passwordConfirm" class="form-control" placeholder="Confirmar senha" required=""> 
+                        <input type="password" name="passwordConfirm" class="form-control" placeholder="Confirmar senha" value="<?php echo $_SESSION['passwordConfirm'] ?>" required=""> 
                      </div>
                   </div>
                </div>
@@ -175,7 +175,7 @@
                            <td>
                               <div >
                                  <label>Estado: </label>
-                                 <select name="estado" value="<?php echo $_SESSION['estado'] ?>" class="form-control">
+                                 <select name="estado" class="form-control">
                                     <option value="select">Selecione</option>
                                     <option value="ac"<?php echo selected( 'ac', $_SESSION['estado'] ); ?>>Acre</option>
                                     <option value="al"<?php echo selected( 'al', $_SESSION['estado'] ); ?>>Alagoas</option>
