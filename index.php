@@ -69,7 +69,7 @@ function displaylayer(nameDiv,personal){
     </tr>
     <tr>
       <td align="center" valign="middle">
-        <a href="http://www.chasquedoconhaque.com.br/" target="_blank" onclick="displaylayer('promo','off');" title="Aguarde!"><img src="http://www.chasquedoconhaque.com.br/chasque/wp-content/uploads/2010/03/imagem.jpg" border="0" style="border:1px solid #000000;" /></a>
+        <a href="http://www.chasquedoconhaque.com.br/" target="_blank" onclick="displaylayer('promo','off');" title="Aguarde!"><img src="imagens/a (2).png" border="0" style="border:1px solid #000000;" /></a>
       </td>
     </tr>
   </table>
