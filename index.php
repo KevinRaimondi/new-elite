@@ -47,18 +47,33 @@
 	  <script type="text/javascript" src="../js/jquery.mask.min.js"></script>
 	  <script type="text/javascript" src="../js/mask.js"></script>
       <title> NEW-ELITE | HOME </title>
-      <script type="text/javascript">
-      function hidden(){
-      document.getElementById('popup').style.display='none';
-         }
-      </script>  
+     <script type="text/javascript" language="javascript">
+function displaylayer(nameDiv,personal){
+    var nameDiv = document.getElementById(nameDiv);
+    if(personal.toLowerCase()=='on') nameDiv.style.display='';
+    else if (personal.toLowerCase()=='off') nameDiv.style.display='none';
+    else {
+      if(nameDiv.style.display == 'none') nameDiv.style.display='';
+      else nameDiv.style.display='none';
+    }
+}
+</script>  
     <meta name="description" content="O NELITEAPP foi criado para você que quer ter total controle aonde você estiver. com ele você acessa seu aplicativo de uma forma fácil e segura, sem utiliziar computadores e notebooks, você abre seu estoque na palma de sua mão.">
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <body>
-    <div id="popup">
-    <a href="#" onclick="hidden();"><img src="fechar.png"/></a>
-    <img src="imagens/a (2).png"/>
-    </div>
+    <div id="promo" style="position:absolute; left:314px; top:290px; z-index:2">
+  <table border="0" cellpadding="0" cellspacing="0">
+
+    <tr>
+      <td height="20" align="right"><a href="java script:void(0);" onclick="displaylayer('promo','off');" title="[x]FECHAR"><img src="http://www.chasquedoconhaque.com.br/chasque/wp-content/uploads/2010/03/fechar.png" border="0" /></a></td>
+    </tr>
+    <tr>
+      <td align="center" valign="middle">
+        <a href="http://www.chasquedoconhaque.com.br/" target="_blank" onclick="displaylayer('promo','off');" title="Aguarde!"><img src="http://www.chasquedoconhaque.com.br/chasque/wp-content/uploads/2010/03/imagem.jpg" border="0" style="border:1px solid #000000;" /></a>
+      </td>
+    </tr>
+  </table>
+</div>
   <nav class="navbar navbar-expand-md navbar-dark nav-bar-menu">
     <div class="container">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
