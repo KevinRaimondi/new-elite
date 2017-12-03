@@ -78,7 +78,7 @@
 		header('Location: /cadastro/index.php?msg=5');
 		}else{
 
-			$query = mysqli_query ($conn,"INSERT INTO `usuario` (`id`, `login`, `senha`, `email`, `nome`, `sobrenome`, `rg`, `cpf`, `nascimento`, `rua`, `numero`, `cep`, `bairro`, `cidade`, `estado`) VALUES (NULL, '$usuario', '$password', '$email', '$nome', '$sobrenome', '$rg', '$cpf', $nascimento, '$rua', '$numero', '$cep', '$bairro', '$cidade', '$estado')");
+			$query = mysqli_query ($conn,"INSERT INTO `usuario` (`id`, `login`, `senha`, `email`, `nome`, `sobrenome`, `rg`, `cpf`, `nascimento`, `rua`, `numero`, `cep`, `bairro`, `cidade`, `estado`) VALUES (NULL, '$usuario', '$password', '$email', '$nome', '$sobrenome', '$rg', '$cpf', '$nascimento', '$rua', '$numero', '$cep', '$bairro', '$cidade', '$estado')");
 	
 			if ($query){
 				header('Location: /login/index.php?msg=2"');
