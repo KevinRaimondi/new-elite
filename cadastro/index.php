@@ -119,6 +119,8 @@
       <title> NEW-ELITE | CADASTRO </title>
       <meta name="description" content="O NELITEAPP foi criado para você que quer ter total controle aonde você estiver. com ele você acessa seu aplicativo de uma forma fácil e segura, sem utiliziar computadores e notebooks, você abre seu estoque na palma de sua mão.">
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+       <script type="text/javascript" src="../fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+       <link rel="stylesheet" type="text/css" href="../fancybox/jquery.fancybox-1.3.4.css" media="screen">
    </head>
    <body>
       <nav class="navbar navbar-expand-md navbar-dark nav-bar-menu">
@@ -267,8 +269,8 @@
                      </table>
                      </br>
                      <div class="btn-group" style="float: right;" >
-                        <button type="submit" class="btn btn-secondary">ENVIAR</button>
-                        <button type="reset" class="btn btn-secondary">LIMPAR</button>
+                        <button type="submit" class="btn btn-secondary ifancybox">ENVIAR</button>
+                         <button type="reset" class="btn btn-secondary">LIMPAR</button>
                      </div>
                   </div>
                </div>
