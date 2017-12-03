@@ -8,7 +8,6 @@
 	if(isset($_SESSION["login"]) || isset($_SESSION["senha"])){
 		header('Location: /painel');
 	}else{
-		session_start();
 		session_destroy();
 	}
 

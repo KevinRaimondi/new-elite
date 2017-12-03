@@ -40,8 +40,6 @@
 	
 		$_SESSION['email'] = $email;
 		$_SESSION['usuario'] = $usuario;
-		$_SESSION['password'] = $password;
-		$_SESSION['passwordConfirm'] = $passwordConfirm;
 		$_SESSION['nome'] = $nome;
 		$_SESSION['sobrenome'] = $sobrenome;
 		$_SESSION['rg'] = $rg;

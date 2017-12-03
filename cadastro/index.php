@@ -3,9 +3,7 @@
 	session_start();
 	
 	$email 			   = $_SESSION['email'];               
-	$usuario		   = $_SESSION['usuario'];             
-	$password		   = $_SESSION['password'];            
-	$passwordConfirm   = $_SESSION['passwordConfirm'];     
+	$usuario		   = $_SESSION['usuario'];                 
 	$nome 			   = $_SESSION['nome'];                
 	$sobrenome		   = $_SESSION['sobrenome'];           
 	$rg				   = $_SESSION['rg'];                  
@@ -120,10 +118,10 @@
                         <input type="usuario" name="usuario" class="form-control" placeholder="Usuário" value="<?php echo $usuario ?>" required="" autofocus=""> 
                      </div>
                      <div> <label>Senha</label>
-                        <input type="password" name="password" class="form-control" placeholder="Senha" value="<?php echo $password ?>" required=""> 
+                        <input type="password" name="password" class="form-control" placeholder="Senha" required=""> 
                      </div>
                      <div> <label>Confirmar Senha</label>
-                        <input type="password" name="passwordConfirm" class="form-control" placeholder="Confirmar senha" value="<?php echo $passwordConfirm ?>" required=""> 
+                        <input type="password" name="passwordConfirm" class="form-control" placeholder="Confirmar senha" required=""> 
                      </div>
                   </div>
                </div>
