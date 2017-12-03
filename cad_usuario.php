@@ -42,6 +42,7 @@
     $ano= substr($dateSql, 6);
     $mes= substr($dateSql, 3,-5);
     $dia= substr($dateSql, 0,-8);
-    return $ano."-".$mes."-".$dia;
+	$campoFormatado = $ano."-".$mes."-".$dia;
+    return campoFormatado;
 	
 ?>
