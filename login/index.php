@@ -2,10 +2,13 @@
 
 		  
 	require ("../conexao.php");
+		
 	session_start();
 		  
 	if(isset($_SESSION["login"]) || isset($_SESSION["senha"])){
 		header('Location: /painel');
+	}else{
+		session_destroy();
 	}
 
 	if(isset($_GET['msg'])){
@@ -31,16 +34,7 @@
 				</div>
 			<?php
 			break;
-			case 3:
-			?>
-				<div class="message">
-					<div class="alert alert-danger">
-						<a href="/login" class="close" data-dismiss="alert">&times</a>
-						Usuário não foi cadastrado com Sucesso.
-					</div>
-				</div>
-			<?php
-			break;
+
 		}
 	}
  ?>
