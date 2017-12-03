@@ -1,61 +1,37 @@
-<?php 
+<!DOCTYPE html>
+<html>
 
-		  
-	require ("../conexao.php");
-		
-	session_start();
-		  
-	if(isset($_SESSION["login"]) || isset($_SESSION["senha"])){
-		header('Location: /painel');
-	}else{
-		session_destroy();
-	}
+<head></head>
 
-	if(isset($_GET['msg'])){
-		$msg = $_GET['msg'];
-		switch($msg){
-			case 1:
-			?>
-				<div class="message">
-					<div class="alert alert-danger">
-						<a href="/login" class="close" data-dismiss="alert">&times</a>
-						Usúario ou Senha invalido.
-					</div>
-				</div>
-			<?php
+<body>
+  <div class="message">
+    <div class="alert alert-danger">
+      <a href="/login" class="close" data-dismiss="alert">×</a> Usúario ou Senha invalido. </div>
+  </div>
+  <!--?php
 			break;
 			case 2:
-			?>
-				<div class="message">
-					<div class="alert alert-success">
-						<a href="/login" class="close" data-dismiss="alert">&times</a>
-						Usuário cadastrado com Sucesso.
-					</div>
-				</div>
-			<?php
+			?-->
+  <div class="message">
+    <div class="alert alert-success">
+      <a href="/login" class="close" data-dismiss="alert">×</a> Usuário cadastrado com Sucesso. </div>
+  </div>
+  <!--?php
 			break;
 
 		}
 	}
- ?>
- 
-<!DOCTYPE html>
-<html>
-
-<head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-      <link rel="stylesheet" href="../css/style.css" type="text/css">
-	  <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
-	  <script type="text/javascript" src="../js/jquery.mask.min.js"></script>
-	  <script type="text/javascript" src="../js/mask.js"></script>
-      <title> NEW-ELITE | LOGIN | CADASTRE-SE </title>
-      <meta name="description" content="O NELITEAPP foi criado para você que quer ter total controle aonde você estiver. com ele você acessa seu aplicativo de uma forma fácil e segura, sem utiliziar computadores e notebooks, você abre seu estoque na palma de sua mão.">
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-</head>
-
-<body>
+ ?-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.mask.min.js"></script>
+  <script type="text/javascript" src="../js/mask.js"></script>
+  <title> NEW-ELITE | LOGIN | CADASTRE-SE </title>
+  <meta name="description" content="O NELITEAPP foi criado para você que quer ter total controle aonde você estiver. com ele você acessa seu aplicativo de uma forma fácil e segura, sem utiliziar computadores e notebooks, você abre seu estoque na palma de sua mão.">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <nav class="navbar navbar-expand-md navbar-dark nav-bar-menu">
     <div class="container">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
@@ -113,6 +89,22 @@
           <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-fw fa-facebook fa-3x text-white mx-3"></i></a>
           <a href="https://twitter.com/" target="_blank"><i class="fa fa-fw fa-twitter fa-3x text-white mx-3"></i></a>
           <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-fw fa-instagram fa-3x text-white mx-3"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 gradient-overlay text-center bg-secondary">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="text-light">Teste Gratuito</h1>
+              <p class="text-light">Faça seu cadastro e na hora de logar em seu aplicativo apresente o codigo Nelite15, para versão teste de 15 dias.
+                <br>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
