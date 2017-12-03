@@ -47,9 +47,18 @@
 	  <script type="text/javascript" src="../js/jquery.mask.min.js"></script>
 	  <script type="text/javascript" src="../js/mask.js"></script>
       <title> NEW-ELITE | HOME </title>
-      <meta name="description" content="O NELITEAPP foi criado para você que quer ter total controle aonde você estiver. com ele você acessa seu aplicativo de uma forma fácil e segura, sem utiliziar computadores e notebooks, você abre seu estoque na palma de sua mão.">
+      <script type="text/javascript">
+      function hidden(){
+      document.getElementById('popup').style.display='none';
+         }
+      </script>  
+    <meta name="description" content="O NELITEAPP foi criado para você que quer ter total controle aonde você estiver. com ele você acessa seu aplicativo de uma forma fácil e segura, sem utiliziar computadores e notebooks, você abre seu estoque na palma de sua mão.">
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <body>
+    <div id="popup">
+    <a href="#" onclick="hidden();"><img src="fechar.png"/></a>
+    <img src="imagem.png"/>
+    </div>
   <nav class="navbar navbar-expand-md navbar-dark nav-bar-menu">
     <div class="container">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>

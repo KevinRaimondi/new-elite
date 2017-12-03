@@ -4,7 +4,11 @@
 * Copyright 2011-2017 Twitter, Inc.
 * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
 */
-
+#popup{ //significa que objetos com id="popup" tera os atributos abaixo.
+  position: absolute; //pronto a charada morre aqui, isso ira deixar sua div "flutuando"
+  z-index: 10px; //garantir que ela ira fica em cima das outras coisas da pagina (exceto flash)
+  margin: 50px; // aqui voce ira controlar a posicao que a div ira aparecer.
+}
 .menu{
 	position: absolute;
 	right: 14%;
