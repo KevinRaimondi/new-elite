@@ -2,6 +2,12 @@
 	
 	session_start();
 	
+	if (isset($_SESSION["email"]) && isset($_SESSION["usuario"]) && isset($_SESSION["nome"]) && 
+	isset($_SESSION["sobrenome"])&& isset($_SESSION["rg"]) && isset($_SESSION["cpf"]) && 
+	isset($_SESSION["nascimento"]) && isset($_SESSION["rua"]) && isset($_SESSION["numero"]) && 
+	isset($_SESSION["cep"]) && isset($_SESSION["bairro"]) && isset($_SESSION["cidade"]) && 
+	isset($_SESSION["estado"]) ) {
+	
 	$email 			   = $_SESSION['email'];               
 	$usuario		   = $_SESSION['usuario'];                 
 	$nome 			   = $_SESSION['nome'];                
@@ -17,6 +23,26 @@
 	$bairro  		   = $_SESSION['bairro'];              
 	$cidade  		   = $_SESSION['cidade'];              
 	$estado  		   = $_SESSION['estado'];  
+	
+	}else{
+		
+	$email 			   = "";               
+	$usuario		   = "";                 
+	$nome 			   = "";                
+	$sobrenome		   = "";           
+	$rg				   = "";                  
+	$cpf			   = "";                 
+														
+	$nascimento  	   = "";         
+														
+	$rua  			   = "";                 
+	$numero  		   = "";              
+	$cep  			   = "";                 
+	$bairro  		   = "";              
+	$cidade  		   = "";              
+	$estado  		   = ""; 
+		
+	}
 
 	if(isset($_GET['msg'])){
 		$msg = $_GET['msg'];
@@ -63,7 +89,7 @@
 			break;
 		}
 	}
-	
+		
 	function selected( $value, $selected ){
 		return $value==$selected ? ' selected="selected"' : '';
 	}
