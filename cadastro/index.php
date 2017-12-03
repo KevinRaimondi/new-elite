@@ -97,16 +97,6 @@
 				</div>
 			<?php
 			break;
-			case 6:
-			?>
-				<div class="message">
-					<div class="alert alert-danger">
-						<a href="/cadastro" class="close" data-dismiss="alert">&times</a>
-						Favor preencher o campo Nascimento
-					</div>
-				</div>
-			<?php
-			break;
 		}
 	}
 		
