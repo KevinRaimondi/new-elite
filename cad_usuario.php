@@ -38,7 +38,7 @@
 		header('Location: /login/index.php?msg=3"');
 	}
 	
-	public static function dateEmMysql($dateSql){
+	function dateEmMysql($dateSql){
     $ano= substr($dateSql, 6);
     $mes= substr($dateSql, 3,-5);
     $dia= substr($dateSql, 0,-8);
