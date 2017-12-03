@@ -1,4 +1,24 @@
 <?php 
+	
+	session_start();
+	
+	$email 			   = $_SESSION['email'];               
+	$usuario		   = $_SESSION['usuario'];             
+	$password		   = $_SESSION['password'];            
+	$passwordConfirm   = $_SESSION['passwordConfirm'];     
+	$nome 			   = $_SESSION['nome'];                
+	$sobrenome		   = $_SESSION['sobrenome'];           
+	$rg				   = $_SESSION['rg'];                  
+	$cpf			   = $_SESSION['cpf'];                 
+														
+	$nascimento  	   = $_SESSION['nascimento'];         
+														
+	$rua  			   = $_SESSION['rua'];                 
+	$numero  		   = $_SESSION['numero'];              
+	$cep  			   = $_SESSION['cep'];                 
+	$bairro  		   = $_SESSION['bairro'];              
+	$cidade  		   = $_SESSION['cidade'];              
+	$estado  		   = $_SESSION['estado'];  
 
 	if(isset($_GET['msg'])){
 		$msg = $_GET['msg'];
@@ -32,7 +52,6 @@
 					</div>
 				</div>
 			<?php
-			session_start();
 			break;
 			case 4:
 			?>
@@ -43,7 +62,6 @@
 					</div>
 				</div>
 			<?php
-			session_start();
 			break;
 		}
 	}
@@ -96,16 +114,16 @@
                   <div class="col-md-12">
                      <h1 class="text-gray-dark">Dados de login </h1>
                      <div> <label>E-mail: </label>
-                        <input type="email" name="email" class="form-control" placeholder="E-mail" value="<?php echo $_SESSION['email'] ?>" required="" autofocus=""> 
+                        <input type="email" name="email" class="form-control" placeholder="E-mail" value="<?php echo $email ?>" required="" autofocus=""> 
                      </div>
                      <div> <label>Usuário</label>
-                        <input type="usuario" name="usuario" class="form-control" placeholder="Usuário" value="<?php echo $_SESSION['usuario'] ?>" required="" autofocus=""> 
+                        <input type="usuario" name="usuario" class="form-control" placeholder="Usuário" value="<?php echo $usuario ?>" required="" autofocus=""> 
                      </div>
                      <div> <label>Senha</label>
-                        <input type="password" name="password" class="form-control" placeholder="Senha" value="<?php echo $_SESSION['password'] ?>" required=""> 
+                        <input type="password" name="password" class="form-control" placeholder="Senha" value="<?php echo $password ?>" required=""> 
                      </div>
                      <div> <label>Confirmar Senha</label>
-                        <input type="password" name="passwordConfirm" class="form-control" placeholder="Confirmar senha" value="<?php echo $_SESSION['passwordConfirm'] ?>" required=""> 
+                        <input type="password" name="passwordConfirm" class="form-control" placeholder="Confirmar senha" value="<?php echo $passwordConfirm ?>" required=""> 
                      </div>
                   </div>
                </div>
@@ -116,30 +134,30 @@
                         <tr>
                            <td colspan="3">
                               <div> <label>Nome: </label>
-                                 <input readonly type="text" name="nome" class="form-control" placeholder="Nome" value="<?php echo $_SESSION['nome'] ?>" required="" autofocus=""> 
+                                 <input readonly type="text" name="nome" class="form-control" placeholder="Nome" value="<?php echo $nome ?>" required="" autofocus=""> 
                               </div>
                            </td>
                            <td style="display: table; float:left; margin-right:10px"/>
                            <td>
                               <div > <label>Sobrenome: </label>
-                                 <input readonly type="text" name="sobrenome" class="form-control" placeholder="Sobrenome" value="<?php echo $_SESSION['sobrenome'] ?>" required="" autofocus=""> 
+                                 <input readonly type="text" name="sobrenome" class="form-control" placeholder="Sobrenome" value="<?php echo $sobrenome ?>" required="" autofocus=""> 
                               </div>
                            </td>
                         </tr>
                         <tr>
                            <td  style="display: table; float:left; margin-right:10px">
                               <div > <label>RG: </label>
-                                 <input readonly type="text" name="rg" class="form-control rg" placeholder="RG" value="<?php echo $_SESSION['rg'] ?>" required="" autofocus=""> 
+                                 <input readonly type="text" name="rg" class="form-control rg" placeholder="RG" value="<?php echo $rg ?>" required="" autofocus=""> 
                               </div>
                            </td>
                            <td style="display: table; float:left; margin-right:10px" >
                               <div > <label>CPF: </label>
-                                 <input readonly type="text" name="cpf" class="form-control cpf" placeholder="CPF" value="<?php echo $_SESSION['cpf'] ?>" required="" autofocus=""> 
+                                 <input readonly type="text" name="cpf" class="form-control cpf" placeholder="CPF" value="<?php echo $cpf ?>" required="" autofocus=""> 
                               </div>
                            </td>
                            <td colspan="4">
                               <div > <label>Nascimento: </label>
-                                 <input readonly type="Date" name="nascimento" class="form-control" placeholder="Nascimento"  value="<?php echo $_SESSION['nascimento'] ?>" autofocus=""> 
+                                 <input readonly type="Date" name="nascimento" class="form-control" placeholder="Nascimento"  value="<?php echo $nascimento ?>" autofocus=""> 
                               </div>
                            </td>
                         </tr>
@@ -149,31 +167,31 @@
                         <tr>
                            <td colspan="3" >
                               <div> <label>Rua: </label>
-                                 <input type="text" name="rua" class="form-control" placeholder="Rua"  value="<?php echo $_SESSION['rua'] ?>" required="" autofocus=""> 
+                                 <input type="text" name="rua" class="form-control" placeholder="Rua"  value="<?php echo $rua ?>" required="" autofocus=""> 
                               </div>
                            </td>
                            <td style="display: table; float:left; margin-right:10px"/>
                            <td>
                               <div > <label>Numero: </label>
-                                 <input type="Number" name="numero" class="form-control numero" placeholder="" value="<?php echo $_SESSION['numero'] ?>" required="" autofocus=""> 
+                                 <input type="Number" name="numero" class="form-control numero" placeholder="" value="<?php echo $numero ?>" required="" autofocus=""> 
                               </div>
                            </td>
                         </tr>
                         <tr>
                            <td style="display: table; float:left; margin-right:10px">
                               <div> <label>Cep: </label>
-                                 <input type="text" name="cep" class="form-control cep" placeholder="Cep" value="<?php echo $_SESSION['cep'] ?>" required="" autofocus=""> 
+                                 <input type="text" name="cep" class="form-control cep" placeholder="Cep" value="<?php echo $cep ?>" required="" autofocus=""> 
                               </div>
                            </td>
                            <td colspan="4">
                               <div> <label>Bairro: </label>
-                                 <input type="text" name="bairro" class="form-control" placeholder="Bairro" value="<?php echo $_SESSION['bairro'] ?>" required="" autofocus=""> 
+                                 <input type="text" name="bairro" class="form-control" placeholder="Bairro" value="<?php echo $bairro ?>" required="" autofocus=""> 
                               </div>
                            </td>
                         <tr>
                            <td style="display: table; float:left; margin-right:10px">
                               <div > <label>Cidade: </label>
-                                 <input type="text" name="cidade" class="form-control" placeholder="Cidade" value="<?php echo $_SESSION['cidade'] ?>" required="" autofocus=""> 
+                                 <input type="text" name="cidade" class="form-control" placeholder="Cidade" value="<?php echo $cidade ?>" required="" autofocus=""> 
                               </div>
                            </td>
                            <td>
@@ -181,33 +199,33 @@
                                  <label>Estado: </label>
                                  <select name="estado" class="form-control">
                                     <option value="select">Selecione</option>
-                                    <option value="ac"<?php echo selected( 'ac', $_SESSION['estado'] ); ?>>Acre</option>
-                                    <option value="al"<?php echo selected( 'al', $_SESSION['estado'] ); ?>>Alagoas</option>
-                                    <option value="am"<?php echo selected( 'am', $_SESSION['estado'] ); ?>>Amazonas</option>
-                                    <option value="ap"<?php echo selected( 'ap', $_SESSION['estado'] ); ?>>Amapá</option>
-                                    <option value="ba"<?php echo selected( 'ba', $_SESSION['estado'] ); ?>>Bahia</option>
-                                    <option value="ce"<?php echo selected( 'ce', $_SESSION['estado'] ); ?>>Ceará</option>
-                                    <option value="df"<?php echo selected( 'df', $_SESSION['estado'] ); ?>>Distrito Federal</option>
-                                    <option value="es"<?php echo selected( 'es', $_SESSION['estado'] ); ?>>Espírito Santo</option>
-                                    <option value="go"<?php echo selected( 'go', $_SESSION['estado'] ); ?>>Goiás</option>
-                                    <option value="ma"<?php echo selected( 'ma', $_SESSION['estado'] ); ?>>Maranhão</option>
-                                    <option value="mt"<?php echo selected( 'mt', $_SESSION['estado'] ); ?>>Mato Grosso</option>
-                                    <option value="ms"<?php echo selected( 'ms', $_SESSION['estado'] ); ?>>Mato Grosso do Sul</option>
-                                    <option value="mg"<?php echo selected( 'mg', $_SESSION['estado'] ); ?>>Minas Gerais</option>
-                                    <option value="pa"<?php echo selected( 'pa', $_SESSION['estado'] ); ?>>Pará</option>
-                                    <option value="pb"<?php echo selected( 'pb', $_SESSION['estado'] ); ?>>Paraíba</option>
-                                    <option value="pr"<?php echo selected( 'pr', $_SESSION['estado'] ); ?>>Paraná</option>
-                                    <option value="pe"<?php echo selected( 'pe', $_SESSION['estado'] ); ?>>Pernambuco</option>
-                                    <option value="pi"<?php echo selected( 'pi', $_SESSION['estado'] ); ?>>Piauí</option>
-                                    <option value="rj"<?php echo selected( 'rj', $_SESSION['estado'] ); ?>>Rio de Janeiro</option>
-                                    <option value="rn"<?php echo selected( 'rn', $_SESSION['estado'] ); ?>>Rio Grande do Norte</option>
-                                    <option value="ro"<?php echo selected( 'ro', $_SESSION['estado'] ); ?>>Rondônia</option>
-                                    <option value="rs"<?php echo selected( 'rs', $_SESSION['estado'] ); ?>>Rio Grande do Sul</option>
-                                    <option value="rr"<?php echo selected( 'rr', $_SESSION['estado'] ); ?>>Roraima</option>
-                                    <option value="sc"<?php echo selected( 'sc', $_SESSION['estado'] ); ?>>Santa Catarina</option>
-                                    <option value="se"<?php echo selected( 'se', $_SESSION['estado'] ); ?>>Sergipe</option>
-                                    <option value="sp"<?php echo selected( 'sp', $_SESSION['estado'] ); ?>>São Paulo</option>
-                                    <option value="to"<?php echo selected( 'to', $_SESSION['estado'] ); ?>>Tocantins</option>
+                                    <option value="ac"<?php echo selected( 'ac', $estado ); ?>>Acre</option>
+                                    <option value="al"<?php echo selected( 'al', $estado ); ?>>Alagoas</option>
+                                    <option value="am"<?php echo selected( 'am', $estado ); ?>>Amazonas</option>
+                                    <option value="ap"<?php echo selected( 'ap', $estado ); ?>>Amapá</option>
+                                    <option value="ba"<?php echo selected( 'ba', $estado ); ?>>Bahia</option>
+                                    <option value="ce"<?php echo selected( 'ce', $estado ); ?>>Ceará</option>
+                                    <option value="df"<?php echo selected( 'df', $estado ); ?>>Distrito Federal</option>
+                                    <option value="es"<?php echo selected( 'es', $estado ); ?>>Espírito Santo</option>
+                                    <option value="go"<?php echo selected( 'go', $estado ); ?>>Goiás</option>
+                                    <option value="ma"<?php echo selected( 'ma', $estado ); ?>>Maranhão</option>
+                                    <option value="mt"<?php echo selected( 'mt', $estado ); ?>>Mato Grosso</option>
+                                    <option value="ms"<?php echo selected( 'ms', $estado ); ?>>Mato Grosso do Sul</option>
+                                    <option value="mg"<?php echo selected( 'mg', $estado ); ?>>Minas Gerais</option>
+                                    <option value="pa"<?php echo selected( 'pa', $estado ); ?>>Pará</option>
+                                    <option value="pb"<?php echo selected( 'pb', $estado ); ?>>Paraíba</option>
+                                    <option value="pr"<?php echo selected( 'pr', $estado ); ?>>Paraná</option>
+                                    <option value="pe"<?php echo selected( 'pe', $estado ); ?>>Pernambuco</option>
+                                    <option value="pi"<?php echo selected( 'pi', $estado ); ?>>Piauí</option>
+                                    <option value="rj"<?php echo selected( 'rj', $estado ); ?>>Rio de Janeiro</option>
+                                    <option value="rn"<?php echo selected( 'rn', $estado ); ?>>Rio Grande do Norte</option>
+                                    <option value="ro"<?php echo selected( 'ro', $estado ); ?>>Rondônia</option>
+                                    <option value="rs"<?php echo selected( 'rs', $estado ); ?>>Rio Grande do Sul</option>
+                                    <option value="rr"<?php echo selected( 'rr', $estado ); ?>>Roraima</option>
+                                    <option value="sc"<?php echo selected( 'sc', $estado ); ?>>Santa Catarina</option>
+                                    <option value="se"<?php echo selected( 'se', $estado ); ?>>Sergipe</option>
+                                    <option value="sp"<?php echo selected( 'sp', $estado ); ?>>São Paulo</option>
+                                    <option value="to"<?php echo selected( 'to', $estado ); ?>>Tocantins</option>
                                  </select>
                               </div>
                            </td>
