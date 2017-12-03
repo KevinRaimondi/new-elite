@@ -2,11 +2,16 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-  <link rel="stylesheet" href="../css/style.css" type="text/css">
-
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+      <link rel="stylesheet" href="../css/style.css" type="text/css">
+	  <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+	  <script type="text/javascript" src="../js/jquery.mask.min.js"></script>
+	  <script type="text/javascript" src="../js/mask.js"></script>
+      <title> NEW-ELITE | PLANOS </title>
+      <meta name="description" content="O NELITEAPP foi criado para você que quer ter total controle aonde você estiver. com ele você acessa seu aplicativo de uma forma fácil e segura, sem utiliziar computadores e notebooks, você abre seu estoque na palma de sua mão.">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <body>
   <nav class="navbar navbar-expand-md navbar-dark nav-bar-menu">
     <div class="container">

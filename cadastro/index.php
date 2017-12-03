@@ -37,8 +37,8 @@
 	  <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
 	  <script type="text/javascript" src="../js/jquery.mask.min.js"></script>
 	  <script type="text/javascript" src="../js/mask.js"></script>
-      <title> Cadastro </title>
-      <meta name="description" content="Aprenda a criar um site completo que usa formulários em HTML">
+      <title> NEW-ELITE | CADASTRO </title>
+      <meta name="description" content="O NELITEAPP foi criado para você que quer ter total controle aonde você estiver. com ele você acessa seu aplicativo de uma forma fácil e segura, sem utiliziar computadores e notebooks, você abre seu estoque na palma de sua mão.">
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
    </head>
    <body>
