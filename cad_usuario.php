@@ -22,9 +22,9 @@ echo $nascimento;
 	$cidade  		   = $_POST['cidade'];              
 	$estado  		   = $_POST['estado'];  
 
-	$dataformatada = date('Y-m-d', strtotime($nascimento));
+	//$dataformatada = date('Y-m-d', strtotime($nascimento));
 	
-	echo $dataformatada;
+	//echo $dataformatada;
 
 	/*if($password != $passwordConfirm){
 		header('Location: /cadastro/index.php?msg=1"');
