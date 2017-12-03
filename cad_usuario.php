@@ -32,8 +32,8 @@
 		header('Location: /cadastro/index.php?msg=2"');
 	}
 
-	$verificarExistencia = mysqli_query($conn,"SELECT login, senha  FROM usuario WHERE login = '$usuario'");
-	$row = mysqli_num_rows($verificarExistencia);
+	$verificarExistenciaLogin = mysqli_query($conn,"SELECT * FROM usuario WHERE login = '$usuario'");
+	$row = mysqli_num_rows($verificarExistenciaLogin);
 	if ($row > 0){
 			
 		session_start();
@@ -55,9 +55,9 @@
 		header('Location: /cadastro/index.php?msg=4');
 	}else{
 		
-	$verificarExistencia = mysqli_query($conn,"SELECT login, senha  FROM usuario WHERE email = '$email'");
-	$row = mysqli_num_rows($verificarExistencia);
-	if ($row > 0){
+	$verificarExistenciaEmail = mysqli_query($conn,"SELECT * FROM usuario WHERE email = '$email'");
+	$row1 = mysqli_num_rows($verificarExistenciaEmail);
+	if ($row1 > 0){
 			
 		session_start();
 	
