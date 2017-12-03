@@ -20,6 +20,7 @@
 	$cidade  		   = $_POST['cidade'];              
 	$estado  		   = $_POST['estado'];  
 
+
 	if($password != $passwordConfirm){
 		header('Location: /cadastro/index.php?msg=1"');
 	}
@@ -28,7 +29,7 @@
 		header('Location: /cadastro/index.php?msg=2"');
 	}
 			
-	$query = mysqli_query ($conn,"INSERT INTO `usuario` (`id`, `login`, `senha`, `email`, `nome`, `sobrenome`, `rg`, `cpf`, `nascimento`, `rua`, `numero`, `cep`, `bairro`, `cidade`, `estado`) VALUES (NULL, '$usuario', '$password', '$email', '$nome', '$sobrenome', '$rg', '$cpf', DATE_FORMAT(STR_TO_DATE($dataFormatada, '%d/%m/%Y'), '%Y-%m-%d'), '$rua', '$numero', '$cep', '$bairro', '$cidade', '$estado')");
+	$query = mysqli_query ($conn,"INSERT INTO `usuario` (`id`, `login`, `senha`, `email`, `nome`, `sobrenome`, `rg`, `cpf`, `nascimento`, `rua`, `numero`, `cep`, `bairro`, `cidade`, `estado`) VALUES (NULL, '$usuario', '$password', '$email', '$nome', '$sobrenome', '$rg', '$cpf', DATE_FORMAT(STR_TO_DATE($dataFormatada, '%d/%m/%y'), '%Y-%m-%d'), '$rua', '$numero', '$cep', '$bairro', '$cidade', '$estado')");
 	
 	if ($query){
 		header('Location: /login/index.php?msg=2"');
