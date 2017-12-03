@@ -201,7 +201,7 @@
                            </td>
                            <td colspan="4">
                               <div > <label>Nascimento: </label>
-                                 <input type="Date" name="nascimento" class="form-control" placeholder="Nascimento"  value="<?php echo $nascimento ?>" autofocus=""> 
+                                 <input type="Date" name="nascimento" class="form-control" placeholder="Nascimento"  value="<?php echo $nascimento ?>" required="" autofocus=""> 
                               </div>
                            </td>
                         </tr>

@@ -65,27 +65,6 @@
 		
 		header('Location: /cadastro/index.php?msg=2"');
 	}
-	
-	if(empty($nascimento)){
-		
-		session_start();
-	
-		$_SESSION['email'] = $email;
-		$_SESSION['usuario'] = $usuario;
-		$_SESSION['nome'] = $nome;
-		$_SESSION['sobrenome'] = $sobrenome;
-		$_SESSION['rg'] = $rg;
-		$_SESSION['cpf'] = $cpf;
-		$_SESSION['nascimento'] = $nascimento;
-		$_SESSION['rua'] = $rua;
-		$_SESSION['numero'] = $numero;
-		$_SESSION['cep'] = $cep;
-		$_SESSION['bairro'] = $bairro;
-		$_SESSION['cidade'] = $cidade;
-		$_SESSION['estado'] = $estado;
-		
-		header('Location: /cadastro/index.php?msg=6"');
-	}
 
 	$verificarExistenciaLogin = mysqli_query($conn,"SELECT * FROM usuario WHERE login = '$usuario'");
 	$row = mysqli_num_rows($verificarExistenciaLogin);
