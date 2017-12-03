@@ -18,9 +18,11 @@
 	$cep  			   = $_POST['cep'];                 
 	$bairro  		   = $_POST['bairro'];              
 	$cidade  		   = $_POST['cidade'];              
-	$estado  		   = $_POST['estado'];     
+	$estado  		   = $_POST['estado'];  
 
-	$dataFormatada     = dateEmMysql(nascimento);
+
+	$date 		   = str_replace('/', '-', $nascimento);
+	$dataFormatada = date('Y-m-d', strtotime($date));	
 
 	if($password != $passwordConfirm){
 		header('Location: /cadastro/index.php?msg=1"');
@@ -37,12 +39,5 @@
 	}else{
 		header('Location: /login/index.php?msg=3"');
 	}
-	
-	function dateEmMysql($dateSql){
-		$ano= substr($dateSql, 6);
-		$mes= substr($dateSql, 3,-5);
-		$dia= substr($dateSql, 0,-8);
-		$campoFormatado = $ano."-".$mes."-".$dia;
-    return campoFormatado;
-	
+		
 ?>
