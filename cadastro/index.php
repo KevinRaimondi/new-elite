@@ -32,6 +32,7 @@
 					</div>
 				</div>
 			<?php
+			session_start();
 			break;
 			case 4:
 			?>
