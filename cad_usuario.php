@@ -20,9 +20,9 @@
 	$cidade  		   = $_POST['cidade'];              
 	$estado  		   = $_POST['estado'];  
 
-
-	$date 		   = str_replace('/', '-', $nascimento);
-	$dataFormatada = date('Y-m-d', strtotime($date));	
+	
+	$date = DateTime::createFromFormat('d/m/Y', $nascimento);
+	$dataFormatada = format('Y-m-d');
 
 	if($password != $passwordConfirm){
 		header('Location: /cadastro/index.php?msg=1"');

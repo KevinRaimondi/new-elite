@@ -113,7 +113,7 @@
                            </td>
                            <td colspan="4">
                               <div > <label>Nascimento: </label>
-                                 <input type="Date" name="nascimento" class="form-control" placeholder="Nascimento" autofocus=""> 
+                                 <input type="Date" name="nascimento" class="form-control" placeholder="Nascimento" required="" autofocus=""> 
                               </div>
                            </td>
                         </tr>
