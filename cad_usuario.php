@@ -25,10 +25,65 @@
 
 
 	if($password != $passwordConfirm){
+		
+		session_start();
+	
+		$_SESSION['email'] = $email;
+		$_SESSION['usuario'] = $usuario;
+		$_SESSION['nome'] = $nome;
+		$_SESSION['sobrenome'] = $sobrenome;
+		$_SESSION['rg'] = $rg;
+		$_SESSION['cpf'] = $cpf;
+		$_SESSION['nascimento'] = $nascimento;
+		$_SESSION['rua'] = $rua;
+		$_SESSION['numero'] = $numero;
+		$_SESSION['cep'] = $cep;
+		$_SESSION['bairro'] = $bairro;
+		$_SESSION['cidade'] = $cidade;
+		$_SESSION['estado'] = $estado;
+		
 		header('Location: /cadastro/index.php?msg=1"');
 	}
 	
 	if($estado == "select"){
+		
+		session_start();
+	
+		$_SESSION['email'] = $email;
+		$_SESSION['usuario'] = $usuario;
+		$_SESSION['nome'] = $nome;
+		$_SESSION['sobrenome'] = $sobrenome;
+		$_SESSION['rg'] = $rg;
+		$_SESSION['cpf'] = $cpf;
+		$_SESSION['nascimento'] = $nascimento;
+		$_SESSION['rua'] = $rua;
+		$_SESSION['numero'] = $numero;
+		$_SESSION['cep'] = $cep;
+		$_SESSION['bairro'] = $bairro;
+		$_SESSION['cidade'] = $cidade;
+		$_SESSION['estado'] = $estado;
+		
+		header('Location: /cadastro/index.php?msg=2"');
+	}
+	
+	if($nascimento == "0000-00-00"){
+		
+		session_start();
+	
+		$_SESSION['email'] = $email;
+		$_SESSION['usuario'] = $usuario;
+		$_SESSION['nome'] = $nome;
+		$_SESSION['sobrenome'] = $sobrenome;
+		$_SESSION['rg'] = $rg;
+		$_SESSION['cpf'] = $cpf;
+		$_SESSION['nascimento'] = $nascimento;
+		$_SESSION['rua'] = $rua;
+		$_SESSION['numero'] = $numero;
+		$_SESSION['cep'] = $cep;
+		$_SESSION['bairro'] = $bairro;
+		$_SESSION['cidade'] = $cidade;
+		$_SESSION['estado'] = $estado;
+		
 		header('Location: /cadastro/index.php?msg=2"');
 	}
 
