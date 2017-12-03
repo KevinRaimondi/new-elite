@@ -18,7 +18,9 @@
 	$cep  			   = $_POST['cep'];                 
 	$bairro  		   = $_POST['bairro'];              
 	$cidade  		   = $_POST['cidade'];              
-	$estado  		   = $_POST['estado'];              
+	$estado  		   = $_POST['estado'];     
+
+	$dataFormatada     = dateEmMysql(nascimento);
 
 	if($password != $passwordConfirm){
 		header('Location: /cadastro/index.php?msg=1"');
@@ -28,12 +30,18 @@
 		header('Location: /cadastro/index.php?msg=2"');
 	}
 			
-	$query = mysqli_query ($conn,"INSERT INTO `usuario` (`id`, `login`, `senha`, `email`, `nome`, `sobrenome`, `rg`, `cpf`, `nascimento`, `rua`, `numero`, `cep`, `bairro`, `cidade`, `estado`) VALUES (NULL, '$usuario', '$password', '$email', '$nome', '$sobrenome', '$rg', '$cpf', NULL, '$rua', '$numero', '$cep', '$bairro', '$cidade', '$estado')");
+	$query = mysqli_query ($conn,"INSERT INTO `usuario` (`id`, `login`, `senha`, `email`, `nome`, `sobrenome`, `rg`, `cpf`, `nascimento`, `rua`, `numero`, `cep`, `bairro`, `cidade`, `estado`) VALUES (NULL, '$usuario', '$password', '$email', '$nome', '$sobrenome', '$rg', '$cpf', $dataFormatada, '$rua', '$numero', '$cep', '$bairro', '$cidade', '$estado')");
 	
 	if ($query){
 		header('Location: /login/index.php?msg=2"');
 	}else{
 		header('Location: /login/index.php?msg=3"');
 	}
+	
+	public static function dateEmMysql($dateSql){
+    $ano= substr($dateSql, 6);
+    $mes= substr($dateSql, 3,-5);
+    $dia= substr($dateSql, 0,-8);
+    return $ano."-".$mes."-".$dia;
 	
 ?>

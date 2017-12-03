@@ -25,6 +25,8 @@
 			break;
 		}
 	}
+}
+	
 ?>
 
 <!DOCTYPE html>
