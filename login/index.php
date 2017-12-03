@@ -1,3 +1,42 @@
+<?php 
+		  
+	require ("../conexao.php");
+		
+	session_start();
+		  
+	if(isset($_SESSION["login"]) || isset($_SESSION["senha"])){
+		header('Location: /painel');
+	}else{
+		session_destroy();
+	}
+	if(isset($_GET['msg'])){
+		$msg = $_GET['msg'];
+		switch($msg){
+			case 1:
+			?>
+				<div class="message">
+					<div class="alert alert-danger">
+						<a href="/login" class="close" data-dismiss="alert">&times</a>
+						Usúario ou Senha invalido.
+					</div>
+				</div>
+			<?php
+			break;
+			case 2:
+			?>
+				<div class="message">
+					<div class="alert alert-success">
+						<a href="/login" class="close" data-dismiss="alert">&times</a>
+						Usuário cadastrado com Sucesso.
+					</div>
+				</div>
+			<?php
+			break;
+		}
+	}
+ ?>
+ 
+
 <!DOCTYPE html>
 <html>
 
