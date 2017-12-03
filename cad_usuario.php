@@ -26,7 +26,7 @@ echo $nascimento;
 	
 	echo $dataformatada;
 
-	if($password != $passwordConfirm){
+	/*if($password != $passwordConfirm){
 		header('Location: /cadastro/index.php?msg=1"');
 	}
 	
@@ -40,6 +40,6 @@ echo $nascimento;
 		header('Location: /login/index.php?msg=2"');
 	}else{
 		header('Location: /login/index.php?msg=3"');
-	}
+	}*/
 		
 ?>
