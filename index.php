@@ -2,11 +2,10 @@
 	
 	session_start();
 	
-	if(isset($_SESSION["login"]) || isset($_SESSION["senha"])){
-		$id = $_SESSION["id"];
-		
+	if(!isset($_SESSION["login"]) || !isset($_SESSION["senha"])){
+		$id = 0;
 	}else{
-		$id = "";
+		$id = $_SESSION["id"];
 	}	
 
 	if(isset($_GET['msg'])){
