@@ -13,16 +13,16 @@
 	
 		switch($idplano){
 			case 1:
-			$plano = "Teste - Gratis"
+			$plano = "Teste - Gratis";
 			break;
 			case 2:
-			$plano = "Bronze"
+			$plano = "Bronze";
 			break;
 			case 3:
-			$plano = "Prata"
+			$plano = "Prata";
 			break;
 			case 4:
-			$plano = "Ouro"
+			$plano = "Ouro";
 			break;
 		}
 
