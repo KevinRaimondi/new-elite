@@ -12,17 +12,19 @@
 	
 		switch($idplano){
 			case 1:
-			$plano = "Teste - Gratis";
+				$plano = "Teste - Gratis";
 			break;
 			case 2:
-			$plano = "Bronze";
+				$plano = "Bronze";
 			break;
 			case 3:
-			$plano = "Prata";
+				$plano = "Prata";
 			break;
 			case 4:
-			$plano = "Ouro";
+				$plano = "Ouro";
 			break;
+			default:
+				header('Location: /painel/index.php?msg=5"');
 		}
 
 	$query = mysqli_query ($conn,"UPDATE `usuario` SET `plano` = '$plano' WHERE `usuario`.`id` = $id");
