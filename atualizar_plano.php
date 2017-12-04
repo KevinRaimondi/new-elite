@@ -9,7 +9,7 @@
 	$id = $_POST['id'];
 	$idplano = $_POST['plano'];
 	
-	$plano = ""
+	$plano = "";
 	
 		switch($idplano){
 			case 1:
