@@ -22,7 +22,7 @@
 	$bairro  		   = $_POST['bairro'];              
 	$cidade  		   = $_POST['cidade'];              
 	$estado  		   = $_POST['estado']; 
-	$plano			   = "Teste - Gratis"	  	
+	$plano			   = "Teste - Gratis";	  	
 
 
 	if($password != $passwordConfirm){
