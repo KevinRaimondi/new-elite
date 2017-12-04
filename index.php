@@ -1,13 +1,12 @@
 <?php 
-
-	require ("conexao.php");
 	
 	session_start();
 	
-	if(!isset($_SESSION["login"]) || !isset($_SESSION["senha"])){
-		$id = "";
-	}else{
+	if(isset($_SESSION["login"]) || isset($_SESSION["senha"])){
 		$id = $_SESSION["id"];
+		
+	}else{
+		$id = "";
 	}	
 
 	if(isset($_GET['msg'])){
@@ -172,7 +171,7 @@
             </div>
 			<form class="" method="post" action="../atualizar_plano.php" >
 				<input type="hidden" name="id" value="<?php echo $id ?>" />
-				<div class="btn-group" style="float: left;" >
+				<div class="btn-group" >
 					<button type="submit" name="acao" value="1" class="btn btn-secondary">TESTE</button>
 				</div>
 			 </form>
@@ -197,7 +196,7 @@
             </div>
 			<form class="" method="post" action="../atualizar_plano.php" >
 				<input type="hidden" name="id" value="<?php echo $id ?>" />
-				<div class="btn-group" style="float: left;" >
+				<div class="btn-group" >
 					<button type="submit" name="acao" value="2" class="btn btn-secondary">COMPRAR</button>
 				</div>
 			</form>
@@ -222,7 +221,7 @@
             </div>
             <form class="" method="post" action="../atualizar_plano.php" >
 				<input type="hidden" name="id" value="<?php echo $id ?>" />
-				<div class="btn-group" style="float: left;" >
+				<div class="btn-group" >
 					<button type="submit" name="acao" value="3" class="btn btn-secondary">COMPRAR</button>
 				</div>
 			</form>
@@ -247,7 +246,7 @@
             </div>
             <form class="" method="post" action="../atualizar_plano.php" >
 				<input type="hidden" name="id" value="<?php echo $id ?>" />
-				<div class="btn-group" style="float: left;" >
+				<div class="btn-group" >
 					<button type="submit" name="acao" value="4" class="btn btn-secondary">COMPRAR</button>
 				</div>
 			</form>
