@@ -1,11 +1,5 @@
 <?php 
 	
-	if(!isset($_SESSION["login"]) || !isset($_SESSION["senha"])){
-		$id = 0;
-	}else{
-		$id = $_SESSION["id"];
-	}	
-
 	if(isset($_GET['msg'])){
 		$msg = $_GET['msg'];
 		switch($msg){
@@ -41,6 +35,16 @@
 			break;
 		}
 	}
+	
+	
+	session_start();
+	
+	if(!isset($_SESSION["login"]) || !isset($_SESSION["senha"])){
+		$id = 0;
+	}else{
+		$id = $_SESSION["id"];
+	}	
+	
  ?>
 <!DOCTYPE html>
 <html>
