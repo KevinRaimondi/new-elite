@@ -95,7 +95,7 @@
                   <div class="col-md-12">
                      <h1 class="text-gray-dark">Plano </h1>
                      <div>
-                        <input type="plano" name="plano" class="form-control" placeholder="Plano" value="<?php echo $dados['plano'] ?>" required="" autofocus=""> 
+                        <input readonly type="plano" name="plano" class="form-control" placeholder="Plano" value="<?php echo $dados['plano'] ?>" required="" autofocus=""> 
                      </div>
                   </div>
                </div>
