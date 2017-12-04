@@ -1,7 +1,7 @@
 <?php 
 	
 	if(!isset($_SESSION["login"]) || !isset($_SESSION["senha"])){
-		$id = 0;
+		$id = 1;
 	}else{
 		$id = $_SESSION["id"];
 	}	
