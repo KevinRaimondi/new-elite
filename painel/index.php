@@ -91,7 +91,16 @@
       <form class="" method="post" action="../atualizar.php" >
          <div class="container py-5">
             <div class="row">
-                  <div class="col-md-8" style="margin-left: 20%;">
+			               <div class="col-md-4">
+                  <div class="col-md-12">
+                     <h1 class="text-gray-dark">Plano </h1>
+                     <div>
+                        <input type="plano" name="plano" class="form-control" placeholder="Plano" value="<?php echo $dados['plano'] ?>" required="" autofocus=""> 
+                     </div>
+                  </div>
+               </div>
+                  <div class="col-md-8">
+				                    <div class="col-md-13">
                      <h1 class="text-gray-dark">Dados Pessoais</h1>
                      <table style="margin-bottom: 12%;">
                         <tr>
@@ -203,6 +212,7 @@
 						<button type="submit" name="acao" value="alterar" class="btn btn-secondary">ALTERAR</button>
 						<button type="submit" name="acao" value="sair" class="btn btn-secondary">SAIR</button>
 					</div>
+						</div>
 				</div>
             </div>
       </form>

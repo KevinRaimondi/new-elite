@@ -21,7 +21,8 @@
 	$cep  			   = $_POST['cep'];                 
 	$bairro  		   = $_POST['bairro'];              
 	$cidade  		   = $_POST['cidade'];              
-	$estado  		   = $_POST['estado'];  
+	$estado  		   = $_POST['estado']; 
+	$plano			   = "Teste - Gratis"	  	
 
 
 	if($password != $passwordConfirm){
@@ -112,7 +113,7 @@
 		header('Location: /cadastro/index.php?msg=5');
 	}	
 
-	$query = mysqli_query ($conn,"INSERT INTO `usuario` (`id`, `login`, `senha`, `email`, `nome`, `sobrenome`, `rg`, `cpf`, `nascimento`, `rua`, `numero`, `cep`, `bairro`, `cidade`, `estado`) VALUES (NULL, '$usuario', '$password', '$email', '$nome', '$sobrenome', '$rg', '$cpf', '$nascimento', '$rua', '$numero', '$cep', '$bairro', '$cidade', '$estado')");
+	$query = mysqli_query ($conn,"INSERT INTO `usuario` (`id`, `login`, `senha`, `email`, `nome`, `sobrenome`, `rg`, `cpf`, `nascimento`, `rua`, `numero`, `cep`, `bairro`, `cidade`, `estado`,`plano`) VALUES (NULL, '$usuario', '$password', '$email', '$nome', '$sobrenome', '$rg', '$cpf', '$nascimento', '$rua', '$numero', '$cep', '$bairro', '$cidade', '$estado', '$plano')");
 	if ($query){
 		header('Location: /login/index.php?msg=2"');
 	}else{
