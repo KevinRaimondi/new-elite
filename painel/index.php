@@ -93,8 +93,8 @@
             <div class="row">
 			               <div class="col-md-4">
                   <div class="col-md-12">
-                     <h1 class="text-gray-dark">Plano </h1>
-                     <div>
+                     <h1 class="text-gray-dark">Informações </h1>
+                     <div> <label>Plano: </label>
                         <input readonly type="plano" name="plano" class="form-control" placeholder="Plano" value="<?php echo $dados['plano'] ?>" required="" autofocus=""> 
                      </div>
                   </div>
