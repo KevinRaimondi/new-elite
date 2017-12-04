@@ -1,7 +1,5 @@
 <?php 
 	
-	session_start();
-	
 	if(!isset($_SESSION["login"]) || !isset($_SESSION["senha"])){
 		$id = 0;
 	}else{
