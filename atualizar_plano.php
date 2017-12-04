@@ -6,11 +6,11 @@
 	}else{
 	
 	$id = $_POST['id'];
-	$idplano = $_POST['plano'];
+	$acao = $_POST['acao'];
 	
 	$plano = "";
 	
-		switch($idplano){
+		switch($acao){
 			case 1:
 				$plano = "Teste - Gratis";
 			break;

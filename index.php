@@ -1,7 +1,7 @@
 <?php 
 	
 	if(!isset($_SESSION["login"]) || !isset($_SESSION["senha"])){
-		$id = 1;
+		$id = 0;
 	}else{
 		$id = $_SESSION["id"];
 	}	
@@ -169,7 +169,7 @@
 			<form class="" method="post" action="../atualizar_plano.php" >
 				<input type="hidden" name="id" value="<?php echo $id ?>" />
 				<div class="btn-group" >
-					<button type="submit" name="acao" value="1" class="btn btn-secondary">TESTE</button>
+					<button type="submit" name="acao" value="9" class="btn btn-secondary">TESTE</button>
 				</div>
 			 </form>
           </div>
