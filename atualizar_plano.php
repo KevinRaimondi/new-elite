@@ -25,6 +25,7 @@
 			break;
 			default:
 				header('Location: /painel/index.php?msg=5"');
+			break;
 		}
 
 	$query = mysqli_query ($conn,"UPDATE `usuario` SET `plano` = '$plano' WHERE `usuario`.`id` = $id");
