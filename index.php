@@ -1,4 +1,13 @@
 <?php 
+
+	session_start();
+	
+	if(!isset($_SESSION["login"]) || !isset($_SESSION["senha"])){
+		$id = "";
+	}else{
+		$id = $_SESSION["id"];
+	}	
+
 	if(isset($_GET['msg'])){
 		$msg = $_GET['msg'];
 		switch($msg){
@@ -159,10 +168,12 @@
               <hr>
               <p><b>Armazenamento em nuvem&nbsp;</b></p>
             </div>
-            <div class="card-block">
-              <a href="https://www.startminer.com/1492574" target="_blank"> </a>
-              <a href="/login" class="btn btn-secondary"><b>TESTAR</b></a>
-            </div>
+			<form class="" method="post" action="../atualizar_plano.php" >
+				<input type="hidden" name="id" value="<?php echo $id ?>" />
+				<div class="btn-group" style="float: left;" >
+					<button type="submit" name="acao" value="1" class="btn btn-secondary">TESTE</button>
+				</div>
+			 </form>
           </div>
         </div>
         <div class="col-md-3">
@@ -182,9 +193,12 @@
               <hr>
               <p><b>Armazenamento em nuvem&nbsp;</b></p>
             </div>
-            <div class="card-block">
-              <a href="/em_construcao" class="btn btn-secondary"><b>COMPRAR</b></a>
-            </div>
+			<form class="" method="post" action="../atualizar_plano.php" >
+				<input type="hidden" name="id" value="<?php echo $id ?>" />
+				<div class="btn-group" style="float: left;" >
+					<button type="submit" name="acao" value="2" class="btn btn-secondary">COMPRAR</button>
+				</div>
+			</form>
           </div>
         </div>
         <div class="col-md-3">
@@ -204,9 +218,12 @@
               <hr>
               <p><b>Armazenamento em nuvem&nbsp;</b></p>
             </div>
-            <div class="card-block">
-              <a href="/em_construcao" class="btn btn-secondary"><b>COMPRAR</b></a>
-            </div>
+            <form class="" method="post" action="../atualizar_plano.php" >
+				<input type="hidden" name="id" value="<?php echo $id ?>" />
+				<div class="btn-group" style="float: left;" >
+					<button type="submit" name="acao" value="3" class="btn btn-secondary">COMPRAR</button>
+				</div>
+			</form>
           </div>
         </div>
         <div class="col-md-3">
@@ -226,9 +243,12 @@
               <hr>
               <p><b>Armazenamento em nuvem&nbsp;</b></p>
             </div>
-            <div class="card-block">
-              <a href="/em_construcao" class="btn btn-secondary"><b>COMPRAR</b></a>
-            </div>
+            <form class="" method="post" action="../atualizar_plano.php" >
+				<input type="hidden" name="id" value="<?php echo $id ?>" />
+				<div class="btn-group" style="float: left;" >
+					<button type="submit" name="acao" value="4" class="btn btn-secondary">COMPRAR</button>
+				</div>
+			</form>
           </div>
         </div>
       </div>

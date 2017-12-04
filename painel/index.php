@@ -48,6 +48,26 @@
 				</div>
 			<?php
 			break;
+			case 4:
+			?>
+				<div class="message">
+					<div class="alert alert-success">
+						<a href="/painel" class="close" data-dismiss="alert">&times</a>
+						Plano atualizado com sucesso.
+					</div>
+				</div>
+			<?php
+			break;
+			case 5:
+			?>
+				<div class="message">
+					<div class="alert alert-danger">
+						<a href="/painel" class="close" data-dismiss="alert">&times</a>
+						Não foi possivel atualizar o plano.
+					</div>
+				</div>
+			<?php
+			break;
 		}
 	}
 	
