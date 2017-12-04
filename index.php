@@ -1,8 +1,8 @@
 <?php 
 
-	if(!isset($_SESSION)){ 
-        session_start(); 
-    } 
+	require ("conexao.php");
+    session_start(); 
+
 	
 	if(!isset($_SESSION["login"]) || !isset($_SESSION["senha"])){
 		$id = 0;
@@ -75,9 +75,6 @@
             <a class="nav-link" href="/quem-somos"><b class="text-light">QUEM SOMOS</b></a>
           </li>
 		  <?php 
-		  
-		  	require ("conexao.php");
-			session_start();
 		  
 		  	if(!isset($_SESSION["login"]) || !isset($_SESSION["senha"])){
 				echo '<li class="nav-item">';
